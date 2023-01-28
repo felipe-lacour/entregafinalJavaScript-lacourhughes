@@ -11,26 +11,30 @@ function compraPeliculas(){
     let peliculas = prompt('Que pelicula desea alquilar? \n 1: Avatar: The Way of Water \n 2: Everything Everywhere All At Once \n 3: Puss in Boots : The Last Wish \n 4: The Menu \n ESC: Salir');
     switch (peliculas) {
       case '1': //avatar
-        precio = '$5.99';
+        precio = 5.99;
         pelicula = 'Avatar: The Way of Water';
+        total += precio;
         agregarConfirmacion ();
         seguirCompra ();
         break;
       case '2': //everything everywhere all at once 
-        precio = '$4.99';
+        precio = 5.99;
         pelicula = 'Everything Everywhere All At Once';
+        total += precio;        
         agregarConfirmacion ();
         seguirCompra ();
         break;
       case '3': //puss in boots the last wish
-        precio = '$5.99';
+        precio = 5.99;
         pelicula = 'Puss in Boots : The Last Wish';
+        total += precio;
         agregarConfirmacion ();
         seguirCompra ();
         break;
       case '4': //the menu
-        precio = '$5.99';
+        precio = 5.99;
         pelicula = 'The Menu';
+        total += precio;
         agregarConfirmacion ();
         seguirCompra ();
         break;
@@ -44,26 +48,30 @@ function compraPeliculas(){
     let peliculas = prompt('Que pelicula desea alquilar? \n 1: The Godfather \n 2: The Green Mile \n 3: Top Gun \n 4: Forrest Gump \n ESC: Salir');
     switch (peliculas) {
       case '1': //the godfather
-        precio = '$2.99';
+        precio = 2.99;
         pelicula = 'The Godfather';
+        total += precio;
         agregarConfirmacion ();
         seguirCompra ();        
         break;
       case '2': //the green mile 
-        precio = '$3.99'
-        pelicula = 'The Green Mile'        
+        precio = 2.99
+        pelicula = 'The Green Mile'
+        total += precio;  
         agregarConfirmacion ();
-
+        seguirCompra();
         break;
       case '3': //top gun
-        precio = '$2.99'
-        pelicula = 'Top Gun'        
+        precio = 2.99
+        pelicula = 'Top Gun' 
+        total += precio;       
         agregarConfirmacion ();
         seguirCompra ();
         break;
       case '4': //forrest gump
-        precio = '$3.99'
+        precio = 3.99
         pelicula = 'Forrest Gump'
+        total += precio;
         agregarConfirmacion ();
         seguirCompra ();
         break;
@@ -85,7 +93,7 @@ function seguirCompra (){
     compraPeliculas();
   } else if (postEleccion === '2'){
     console.log('Finalizar Compra');
-    alert(textoConfirmacion);
+    alert(textoConfirmacion + '\n TOTAL: $' + total);
   } else if (postEleccion === 'ESC'){
     console.log('Salir');
   } else {
@@ -95,8 +103,8 @@ function seguirCompra (){
 }
 
 function agregarConfirmacion (){
-  textoConfirmacion += pelicula + ' ';
-  textoConfirmacion += precio + ' ';
+  textoConfirmacion += '\n' + pelicula + ' ';
+  textoConfirmacion += '$' + precio + ' ';
 }
 
 
@@ -106,6 +114,7 @@ let id;
 let precio;
 let pelicula;
 let textoConfirmacion = 'Sus peliculas son: ';
+let total = 0
 
 
 //acciones
