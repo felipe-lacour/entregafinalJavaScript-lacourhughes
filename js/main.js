@@ -94,7 +94,8 @@ function seguirCompra (){
   if (postEleccion === '1'){
     compraPeliculas();
   } else if (postEleccion === '2'){
-    alert(textoConfirmacion + '\n TOTAL: $' + total);
+    totalFinal = total.toFixed(2);
+    alert(textoConfirmacion + '\n TOTAL: $' + totalFinal);
   } else if (postEleccion === 'ESC'){
     salir ();
   } else {
@@ -104,8 +105,6 @@ function seguirCompra (){
 }
 
 function salir (){
-  pelicula = '';
-  precio = 0;
   textoConfirmacion = 'Sus peliculas son: ';
   total = 0;
 }
@@ -123,6 +122,7 @@ let precio;
 let pelicula;
 let textoConfirmacion;
 let total;
+let totalFinal;
 
 
 //acciones
