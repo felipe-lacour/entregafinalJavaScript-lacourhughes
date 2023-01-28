@@ -117,7 +117,6 @@ function agregarConfirmacion (){
 
 //variables
 let genero;
-let id;
 let precio;
 let pelicula;
 let textoConfirmacion;
