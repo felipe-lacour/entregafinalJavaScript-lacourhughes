@@ -1,12 +1,7 @@
 //funciones
 
-function bienvenidoUsuario () {
-  let nombre = prompt('Ingrese su nombre');
-  alert('Bienvenid@ ' + nombre + '!!');
-}
-
 function compraPeliculas(){
-  genero = prompt('Que genero esta buscando comprar? \n 1: Nuevos Lanzamientos \n 2: Clasicos')
+  genero = prompt('Que genero esta buscando comprar? \n 1: Nuevos Lanzamientos \n 2: Clasicos \n ESC: Salir')
   if (genero === '1' || genero === 'nuevos lanzamientos') {
     let peliculas = prompt('Que pelicula desea alquilar? \n 1: Avatar: The Way of Water \n 2: Everything Everywhere All At Once \n 3: Puss in Boots : The Last Wish \n 4: The Menu \n ESC: Salir');
     switch (peliculas) {
@@ -39,10 +34,12 @@ function compraPeliculas(){
         seguirCompra ();
         break;
       case 'ESC':
+        salir ();
         break;
       default:
         alert('Pelicula no encontrada');
         compraPeliculas();
+        break;
     }
   } else if (genero === '2' || genero === 'clasicos'){
     let peliculas = prompt('Que pelicula desea alquilar? \n 1: The Godfather \n 2: The Green Mile \n 3: Top Gun \n 4: Forrest Gump \n ESC: Salir');
@@ -76,13 +73,18 @@ function compraPeliculas(){
         seguirCompra ();
         break;
       case 'ESC':
+        salir ();
         break;
       default:
         alert('Pelicula no encontrada');
-
+        compraPeliculas();
+        break;
     }
+  } else if (genero === 'ESC' || genero === 'salir'){
+    salir();
   } else {
-    alert('Genero Invalido');    
+    alert('Genero Invalido');
+    compraPeliculas();
   }
 
 }
@@ -92,14 +94,20 @@ function seguirCompra (){
   if (postEleccion === '1'){
     compraPeliculas();
   } else if (postEleccion === '2'){
-    console.log('Finalizar Compra');
     alert(textoConfirmacion + '\n TOTAL: $' + total);
   } else if (postEleccion === 'ESC'){
-    console.log('Salir');
+    salir ();
   } else {
     console.log('Comando invalido')
     seguirCompra();
   }
+}
+
+function salir (){
+  pelicula = '';
+  precio = 0;
+  textoConfirmacion = 'Sus peliculas son: ';
+  total = 0;
 }
 
 function agregarConfirmacion (){
@@ -113,9 +121,10 @@ let genero;
 let id;
 let precio;
 let pelicula;
-let textoConfirmacion = 'Sus peliculas son: ';
-let total = 0
+let textoConfirmacion;
+let total;
 
 
 //acciones
+salir ();
 compraPeliculas();
