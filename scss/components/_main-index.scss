@@ -1,0 +1,27 @@
+.main{
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  background-color: $negroOscuro;
+
+  &__section{
+    @include grid (stretch, flex-start, 0, 20px, 300px 1fr, none);
+
+
+    &-seleccion {
+      @include flex (row, space-between, center);
+      padding: 20px;
+      background-color: $negroClaro;
+      div{
+        border: 1px solid $naranjaClaro;
+        padding: 50px;
+      }
+
+    }
+    &-filtros{
+      border: 1px solid $naranjaClaro;
+      padding: 20px;
+      background-color: $negroClaro;
+    }
+  }
+}

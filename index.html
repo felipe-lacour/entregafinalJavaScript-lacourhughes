@@ -1,35 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.css"/>
   <title>infoFilm - Alquiler</title>
 </head>
 <body>
-  <main>
-    <section>
-      <h1>infoFilm: Alquiler</h1>
-    </section>
-    <section>
-      <h2>Nuevos Lanzamientos</h2>
-      <ol>
-        <li>Avatar: The Way of Water</li>
-        <li>Everything Everywhere All At Once</li>
-        <li>Puss in Boots: The Last Wish</li>
-        <li>The Menu</li>
-      </ol>
-    </section>
-    <section>
-      <h2>Clasicos</h2>
-      <ol>
-        <li>The Godfather</li>
-        <li>Green Mile</li>
-        <li>TopGun</li>
-        <li>Forrest Gump</li>
-      </ol>
+  <header class="header">
+    <div class="header__logo">
+      <h1>info<span>Film</span>: Alquiler</h1>
+    </div>
+    <div class="header__lista">
+      <ul>
+        <li>All</li>
+        <li>Nuevos Lanzamientos</li>
+        <li>Clasicos</li>
+      </ul>
+    </div>
+  </header>
+  <main class="main">
+    <section class="main__section">
+      <div class="main__section-filtros">
+        <h2>Filtros</h2>
+      </div>
+      <div class="main__section-seleccion">
+        <div>
+          <h2>Nuevos Lanzamientos</h2>
+          <ol>
+            <li>Avatar: The Way of Water</li>
+            <li>Everything Everywhere All At Once</li>
+            <li>Puss in Boots: The Last Wish</li>
+            <li>The Menu</li>
+          </ol>        
+        </div>
+        <div>
+          <h2>Clasicos</h2>
+          <ol>
+            <li>The Godfather</li>
+            <li>Green Mile</li>
+            <li>TopGun</li>
+            <li>Forrest Gump</li>
+          </ol>        
+        </div>
+      </div>
     </section>
   </main>
-
+<footer class="footer">
+  <div class="footer__div">
+    <p class="footer__div-p">
+      Ninguno de los contenidos son propiedad del autor. <br>
+      La pagina existe a modo demostrativo, ninguna de las transacciones es real.
+    </p>
+  </div>
+</footer>
 
   <script src="./js/main.js"></script>
 </body>

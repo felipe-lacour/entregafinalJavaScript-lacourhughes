@@ -1,0 +1,25 @@
+.header{
+  @include flex (row, space-between, center);
+  height: 60px;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0px auto 60px auto;
+  background-color: $negroClaro;
+  padding: 20px;
+  border: 1px solid $naranjaClaro;
+  &__logo{
+    span{
+      color: $naranjaOscuro;
+    }
+  }
+
+  &__lista{
+    ul{
+      @include flex (row, space-between, center);
+      list-style: none;
+    }
+    li{
+      margin: 0 10px;
+    }
+  }
+}

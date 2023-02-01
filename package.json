@@ -1,0 +1,22 @@
+{
+  "name": "preentrega1-lacourhughes",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build-sass":"node-sass --include-path scss scss/main.scss css/style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/felipe-lacour/lacourhughes-proyectojavascript.git"
+  },
+  "author": "Felipe Lacour Hughes",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/felipe-lacour/lacourhughes-proyectojavascript/issues"
+  },
+  "homepage": "https://github.com/felipe-lacour/lacourhughes-proyectojavascript#readme",
+  "devDependencies": {
+    "node-sass": "^8.0.0"
+  }
+}

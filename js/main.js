@@ -1,5 +1,4 @@
 //funciones
-
 function compraPeliculas(){
   genero = prompt('Que genero esta buscando comprar? \n 1: Nuevos Lanzamientos \n 2: Clasicos \n ESC: Salir')
   if (genero === '1' || genero === 'nuevos lanzamientos') {
@@ -9,8 +8,8 @@ function compraPeliculas(){
         precio = 5.99;
         pelicula = 'Avatar: The Way of Water';
         total += precio;
-        agregarConfirmacion ();
-        seguirCompra ();
+        agregarConfirmacion();
+        seguirCompra();
         break;
       case '2': //everything everywhere all at once 
         precio = 5.99;
@@ -113,7 +112,6 @@ function agregarConfirmacion (){
   textoConfirmacion += '\n' + pelicula + ' ';
   textoConfirmacion += '$' + precio + ' ';
 }
-
 
 //variables
 let genero;
