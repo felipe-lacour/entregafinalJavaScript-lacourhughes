@@ -3,10 +3,16 @@ function compraPeliculas(){
   genero = prompt('Que genero esta buscando comprar? \n 1: Nuevos Lanzamientos \n 2: Clasicos \n ESC: Salir');
   switch (genero){
     case '1':
-      peliculasNuevosLanzamientos();
+      peliculasElegidas = peliculas.filter(i => i.genero === nl);
+      peliculasElegidas.forEach(i => mensajeFiltrado += i.id + '. ' + i.nombre + '\n')
+      mensajeFiltrado += 'ESC: Salir'
+      peliculasParaComprar();
       break;
     case '2':
-      peliculasClasicos();
+      peliculasElegidas = peliculas.filter(i => i.genero === cls);
+      peliculasElegidas.forEach(i => mensajeFiltrado += i.id + '. ' + i.nombre + '\n')
+      mensajeFiltrado += 'ESC: Salir'
+      peliculasParaComprar();
       break;      
     case 'ESC':
       salir();
@@ -18,38 +24,23 @@ function compraPeliculas(){
   }
 }
 
-function peliculasNuevosLanzamientos(){
-  pelicula = prompt('Que pelicula desea alquilar? \n 1: Avatar: The Way of Water \n 2: Everything Everywhere All At Once \n 3: Puss in Boots : The Last Wish \n 4: The Menu \n ESC: Salir')
-  pelicula = parseInt(pelicula);
-  if (pelicula > peliculasNl.length){
-    alert('Pelicula no encontrada');
-    peliculasNuevosLanzamientos();
-  } else if (pelicula === peliculasNl[pelicula -1].id ){
-    console.log(peliculasNl[pelicula-1])
-    canastaDeCompra.push(peliculasNl[pelicula -1])
-    textoConfirmacion += '\n' + peliculasNl[pelicula - 1].nombre + ' ';
-    textoConfirmacion += '$' + peliculasNl[pelicula - 1].precio + ' ';
-    seguirCompra()    
-  } else if (pelicula === 'ESC'){
-    salir()
+function peliculasParaComprar(){
+  pelicula = prompt(mensajeFiltrado)
+  while (pelicula !== 'ESC'){
+    pelicula = parseInt(pelicula);
+    if (pelicula > peliculasElegidas.length){
+      alert('Pelicula no encontrada');
+      peliculasParaComprar();
+    } else if (pelicula === peliculasElegidas[pelicula -1].id){
+      mensajeFiltrado = 'Que pelicula desea alquilar? \n';
+      console.log(peliculasElegidas[pelicula-1])
+      canastaDeCompra.push(peliculasElegidas[pelicula -1])
+      textoConfirmacion += '\n' + peliculasElegidas[pelicula - 1].nombre + ' ';
+      textoConfirmacion += '$' + peliculasElegidas[pelicula - 1].precio + ' ';
+      seguirCompra();
+      return;
+    }
   }
-}
-
-function peliculasClasicos(){
-  pelicula = prompt('Que pelicula desea alquilar? \n 1: The Godfather \n 2: The Green Mile \n 3: Top Gun \n 4: Forrest Gump \n 5: Invincible \nESC: Salir')
-  pelicula = parseInt(pelicula);
-  if (pelicula > peliculasCls.length){
-    alert('Pelicula no encontrada');
-    peliculasClasicos();
-  } else if (pelicula === peliculasCls[(pelicula -1)].id){
-    console.log(peliculasCls[pelicula-1])
-    canastaDeCompra.push(peliculasCls[pelicula -1])
-    textoConfirmacion += '\n' + peliculasCls[pelicula - 1].nombre + ' ';
-    textoConfirmacion += '$' + peliculasCls[pelicula - 1].precio + ' ';
-    seguirCompra()
-  } else if (pelicula === 'ESC'){
-    salir()
-  } 
 }
 
 function seguirCompra (){
@@ -63,18 +54,18 @@ function seguirCompra (){
   } else if (postEleccion === 'ESC'){
     salir ();
   } else {
-    console.log('Comando invalido')
+    alert('Comando invalido')
     seguirCompra();
   }
 }
 
 function salir(){
-  for (let i = 1; i <= canastaDeCompra.length; i++){
+  for (let i = 1; (i <= canastaDeCompra.length) && (i <= peliculasElegidas.length); i++){
     canastaDeCompra.splice(i - 1, canastaDeCompra.length);
+    peliculasElegidas.splice(i - 1, peliculasElegidas.length);
   }
   canastaFinal = 0;
   textoConfirmacion = 'Sus peliculas son: ';
-  console.log(canastaDeCompra)
 }
 
 salir ();
