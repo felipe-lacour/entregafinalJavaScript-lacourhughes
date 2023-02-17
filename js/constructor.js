@@ -29,5 +29,6 @@ const theGodfather = new Pelicula('The Godfather', 2.99, 1972, cls, 1);
 const greenMile = new Pelicula('Green Mile', 2.99, 1999, cls, 2);
 const topGun = new Pelicula('Top Gun', 2.99, 1986, cls, 3);
 const forrestGump = new Pelicula('Forrest Gump', 3.99, 1995, cls, 4);
+const rocky = new Pelicula('Rocky', 1.99, 1984, cls, 6)
 
-peliculas.push(avatar2, eeaao, pussInBoots, theMenu, spiderman3, theGodfather, greenMile, topGun, forrestGump, invincible)
+peliculas.push(avatar2, eeaao, pussInBoots, theMenu, spiderman3, theGodfather, greenMile, topGun, forrestGump, invincible, rocky)

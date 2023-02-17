@@ -4,13 +4,13 @@ function compraPeliculas(){
   switch (genero){
     case '1':
       peliculasElegidas = peliculas.filter(i => i.genero === nl);
-      peliculasElegidas.forEach(i => mensajeFiltrado += i.id + '. ' + i.nombre + '\n')
+      peliculasElegidas.forEach(i => mensajeFiltrado += `${i.id}. ${i.nombre} \n`)
       mensajeFiltrado += 'ESC: Salir'
       peliculasParaComprar();
       break;
     case '2':
       peliculasElegidas = peliculas.filter(i => i.genero === cls);
-      peliculasElegidas.forEach(i => mensajeFiltrado += i.id + '. ' + i.nombre + '\n')
+      peliculasElegidas.forEach(i => mensajeFiltrado += `${i.id}. ${i.nombre} \n`)
       mensajeFiltrado += 'ESC: Salir'
       peliculasParaComprar();
       break;      
@@ -35,8 +35,8 @@ function peliculasParaComprar(){
       mensajeFiltrado = 'Que pelicula desea alquilar? \n';
       console.log(peliculasElegidas[pelicula-1])
       canastaDeCompra.push(peliculasElegidas[pelicula -1])
-      textoConfirmacion += '\n' + peliculasElegidas[pelicula - 1].nombre + ' ';
-      textoConfirmacion += '$' + peliculasElegidas[pelicula - 1].precio + ' ';
+      textoConfirmacion += `\n ${peliculasElegidas[pelicula - 1].nombre} `;
+      textoConfirmacion += `$${peliculasElegidas[pelicula - 1].precio} `;
       seguirCompra();
       return;
     }
@@ -49,7 +49,7 @@ function seguirCompra (){
     compraPeliculas();
   } else if (postEleccion === '2'){
     canastaDeCompra.forEach(i => canastaFinal += i.precio)
-    alert(textoConfirmacion + '\n TOTAL: $' + canastaFinal.toFixed(2));
+    alert(`${textoConfirmacion} \n TOTAL: $${canastaFinal.toFixed(2)}`);
     salir();
   } else if (postEleccion === 'ESC'){
     salir ();
