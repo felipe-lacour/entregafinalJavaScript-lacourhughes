@@ -26,7 +26,7 @@ function compraPeliculas(){
 
 function peliculasParaComprar(){
   pelicula = prompt(mensajeFiltrado)
-  while (pelicula !== 'ESC'){
+  while (pelicula !== 'ESC'){ 
     pelicula = parseInt(pelicula);
     if (pelicula > peliculasElegidas.length){
       alert('Pelicula no encontrada');
