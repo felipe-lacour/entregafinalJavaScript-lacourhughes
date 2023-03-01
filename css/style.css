@@ -94,6 +94,9 @@ html {
 .price {
   color: #F28322; }
 
+.filtro_pelicula {
+  margin: 10px 0; }
+
 footer {
   justify-self: flex-end;
   background-color: #011526;

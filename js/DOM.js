@@ -1,6 +1,29 @@
 const mainSeleccion = document.querySelector('#main-seleccion');
-peliculas.forEach(i => {
-  let cartelera = document.createElement('div');
+const filtros = document.forms['filtros'];
+
+filtros.addEventListener('click', (e) => {
+  switch (e.target.value) {
+    case 'Nuevos Lanzamientos':
+      mainSeleccion.innerHTML = '';
+      peliculasElegidas = peliculas.filter(i => i.genero === nl);
+      peliculasElegidas.forEach(i => armadorCarteleras(i));
+      break;
+    case 'Clasicos':
+      mainSeleccion.innerHTML = '';
+      peliculasElegidas = peliculas.filter(i => i.genero === cls);
+      peliculasElegidas.forEach(i => armadorCarteleras(i));
+      break;
+    default:
+      mainSeleccion.innerHTML = '';
+      peliculas.forEach(i => armadorCarteleras(i));
+      break;
+  }
+});
+
+peliculas.forEach(i => armadorCarteleras(i))
+
+function armadorCarteleras (i){
+  const cartelera = document.createElement('div');
   cartelera.classList.add('cartelera');
   cartelera.innerHTML =`
   <div class="cartelera_imagen">
@@ -18,4 +41,4 @@ peliculas.forEach(i => {
   </div>
   `
   mainSeleccion.append(cartelera)
-})
+}
