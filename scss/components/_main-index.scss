@@ -10,10 +10,10 @@
 
 
     &-seleccion {
-      @include grid (stretch, space-between, 50px, 0, repeat(3, 240px), none);
+      @include grid (stretch, space-between, 30px, 0, repeat(3, 240px), none);
       padding: 20px;
       background-color: $negroClaro;
-      max-height: 1000px;
+      height: 1000px;
       overflow-y: scroll;
     }
     &-filtros{
@@ -25,7 +25,8 @@
 }
 
 .cartelera{
-  width: fit-content;
+  width: 210px;
+  height: 425px;
   border: 1px solid $naranjaClaro;
   padding: 15px;
   @include flex (column, space-between, space-between);

@@ -47,11 +47,11 @@ html {
     .main__section-seleccion {
       display: grid;
       justify-content: space-between;
-      row-gap: 50px;
+      row-gap: 30px;
       grid-template-columns: repeat(3, 240px);
       padding: 20px;
       background-color: #011526;
-      max-height: 1000px;
+      height: 1000px;
       overflow-y: scroll; }
     .main__section-filtros {
       border: 1px solid #D97823;
@@ -59,7 +59,8 @@ html {
       background-color: #011526; }
 
 .cartelera {
-  width: fit-content;
+  width: 210px;
+  height: 425px;
   border: 1px solid #D97823;
   padding: 15px;
   display: flex;
