@@ -6,13 +6,14 @@ class Genero {
 }
 
 class Pelicula {
-  constructor(nombre, precio, fecha, genero, id, imagen){
+  constructor(nombre, precio, fecha, genero, id, imagen, botonID){
     this.nombre = nombre
     this.precio = precio
     this.fecha = fecha
     this.id = id
     this.genero = genero
     this.imagen = imagen
+    this.botonID = botonID
   }
 }
 
