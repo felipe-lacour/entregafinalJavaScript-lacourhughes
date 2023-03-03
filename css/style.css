@@ -15,11 +15,12 @@ html {
   height: 100%; }
 
 .header {
+  max-width: 1200px;
+  box-sizing: border-box;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 60px;
-  max-width: 1200px;
+  height: 100px;
   width: 100%;
   margin: 0px auto 60px auto;
   background-color: #011526;
@@ -27,19 +28,39 @@ html {
   border: 1px solid #D97823; }
   .header__logo span {
     color: #F28322; }
-  .header__lista ul {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    list-style: none; }
-  .header__lista li {
-    margin: 0 10px; }
+  .header__icono {
+    position: relative; }
+    .header__icono img {
+      width: 60px;
+      cursor: pointer; }
+
+.cart-notif {
+  position: absolute;
+  right: -5px;
+  top: -5px;
+  border-radius: 50%;
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .cart-notif_background {
+    width: 20px;
+    height: 20px;
+    background-color: red; }
+  .cart-notif p {
+    text-align: center; }
+
+body {
+  height: fit-content; }
 
 .main {
   max-width: 1200px;
   width: 100%;
   margin: 0 auto;
-  background-color: #010326; }
+  background-color: #010326;
+  position: relative; }
   .main__section {
     display: grid;
     column-gap: 20px;
@@ -97,6 +118,76 @@ html {
 
 .filtro_pelicula {
   margin: 10px 0; }
+
+.visualizar {
+  height: fit-content;
+  max-height: 500px;
+  width: 500px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  display: grid;
+  align-content: flex-start;
+  row-gap: 10px;
+  grid-template-rows: 100px; }
+  .visualizar-pelicula {
+    height: 80px;
+    padding: 10px;
+    display: grid;
+    column-gap: 5px;
+    grid-template-columns: 55px 1fr; }
+    .visualizar-pelicula_poster {
+      height: 80px;
+      width: 100%;
+      border: 1px solid #D97823; }
+      .visualizar-pelicula_poster img {
+        width: 55px;
+        height: 80px; }
+    .visualizar-pelicula_info {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: flex-start; }
+      .visualizar-pelicula_info__extra {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center; }
+    .visualizar-pelicula_precio {
+      font-size: 25px;
+      font-weight: bold;
+      color: #D97823; }
+    .visualizar-pelicula_genero {
+      font-size: 14px;
+      color: gray; }
+    .visualizar-pelicula_fecha {
+      font-size: 14px;
+      color: gray; }
+
+.total {
+  height: 0;
+  background-color: #011526;
+  position: absolute;
+  right: 0px;
+  top: -60px;
+  overflow-x: hidden;
+  border: 0 solid #D97823;
+  border-top: none; }
+
+#total-canasta {
+  padding: 10px;
+  height: 30px;
+  position: sticky;
+  bottom: 0;
+  border-top: 1px solid #D97823;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold; }
+  #total-canasta h5 {
+    font-size: 20px; }
+  #total-canasta p {
+    font-size: 25px;
+    color: #F28322; }
 
 footer {
   justify-self: flex-end;

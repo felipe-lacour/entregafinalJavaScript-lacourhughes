@@ -1,14 +1,14 @@
+body{
+  height: fit-content;
+}
 .main{
   max-width: 1200px;
   width: 100%;
   margin: 0 auto;
   background-color: $negroOscuro;
-
-
+  position: relative;
   &__section{
     @include grid (stretch, flex-start, 0, 20px, 300px 1fr, none);
-
-
     &-seleccion {
       @include grid (stretch, space-between, 30px, 0, repeat(3, 240px), none);
       padding: 20px;
@@ -67,4 +67,75 @@
 
 .filtro_pelicula{
   margin: 10px 0;
+}
+
+.visualizar{
+  height: fit-content;
+  max-height: 500px;
+  width: 500px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+
+  @include grid (flex-start, flex-start, 10px, 0, none, 100px);
+
+  &-pelicula{
+    height: 80px;
+    padding: 10px;
+    @include grid (stretch, flex-start, 0, 5px, 55px 1fr, none);
+    &_poster{
+      height: 80px;
+      width: 100%;
+      border: 1px solid $naranjaClaro;
+      img{
+        width: 55px;
+        height: 80px
+      }
+    }
+    &_info{
+      @include flex (column, space-between, flex-start);
+      &__extra{
+        width: 100%;
+        @include flex (row, space-between, center);
+      }
+    }
+    &_precio{
+      font-size: 25px;
+      font-weight: bold;
+      color: $naranjaClaro;
+    }
+    &_genero{
+      font-size: 14px;
+      color: gray;
+    }
+    &_fecha{
+      font-size: 14px;
+      color: gray;
+    }
+  }
+}
+.total{
+  height: 0;
+  background-color: $negroClaro;
+  position: absolute;
+  right: 0px;
+  top: -60px;
+  overflow-x: hidden;
+  border: 0 solid $naranjaClaro;
+  border-top: none;
+}
+#total-canasta{
+  padding: 10px;
+  height: 30px;
+  position: sticky;
+  bottom: 0;
+  border-top: 1px solid $naranjaClaro;
+  @include flex (row, space-between, center);
+  font-weight: bold;
+  h5{
+    font-size: 20px;
+  }
+  p{
+    font-size: 25px;
+    color: $naranjaOscuro;
+  }
 }
