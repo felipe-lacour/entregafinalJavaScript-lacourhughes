@@ -56,7 +56,7 @@ const mssnMpsbl = new Pelicula('Mission Impossible', 2.99, 1996, act, './imagene
 const grwnPs = new Pelicula('Grown Ups', 2.99, 2010, cmd, './imagenes/posters/grownups.webp')
 const hppyGlmr = new Pelicula('Happy Gilmore', 2.99, 1996, cmd, './imagenes/posters/happygilmore.webp')
 const sprBd = new Pelicula('Superbad', 2.99, 2007, cmd, './imagenes/posters/superbad.webp')
-const twntyNJmpStrt = new Pelicula('Twenty One Jump Street', 2.99, 2012, cmd, './imagenes/posters/21jumpstreet.webp')
+const twntyNJmpStrt = new Pelicula('21 Jump Street', 2.99, 2012, cmd, './imagenes/posters/21jumpstreet.webp')
 const shwShnkRdmptn = new Pelicula('Shawshank Redemption', 2.99, 1994, drm, './imagenes/posters/shawshankkredemption.webp')
 const hckSwRdg = new Pelicula('Hacksaw Ridge', 2.99, 2016, drm, './imagenes/posters/hacksawridge.webp')
 
