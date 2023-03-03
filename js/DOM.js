@@ -1,3 +1,4 @@
+const mainTag = document.getElementById('main__section')
 const mainSeleccion = document.querySelector('#main-seleccion');
 const filtros = document.forms['filtros'];
 const headerIcono = document.querySelector('#header-icono')
@@ -32,15 +33,23 @@ function armadorCarteleras (i){
 
 filtros.addEventListener('click', (e) => {
   switch (e.target.value) {
-    case 'Nuevos Lanzamientos':
-      mainSeleccion.innerHTML = '';
-      peliculasElegidas = peliculas.filter(i => i.genero === nl);
-      peliculasElegidas.forEach(i => armadorCarteleras(i));
+    case 'Drama':
+      filtroPeliculas(drm);
       break;
-    case 'Clasicos':
-      mainSeleccion.innerHTML = '';
-      peliculasElegidas = peliculas.filter(i => i.genero === cls);
-      peliculasElegidas.forEach(i => armadorCarteleras(i));
+    case 'Comedia':
+      filtroPeliculas(cmd);
+      break;
+    case 'Accion':
+      filtroPeliculas(act);
+      break;
+    case 'Ciencia Ficcion':
+      filtroPeliculas(cncFccn);
+      break;
+    case 'Romance':
+      filtroPeliculas(rmnc);
+      break;
+    case 'Thriller':
+      filtroPeliculas(thrllr);
       break;
     default:
       mainSeleccion.innerHTML = '';
@@ -48,6 +57,12 @@ filtros.addEventListener('click', (e) => {
       break;
   }
 });
+
+const filtroPeliculas = (x)=>{
+      mainSeleccion.innerHTML = '';
+      peliculasElegidas = peliculas.filter(i => i.genero === x);
+      peliculasElegidas.forEach(i => armadorCarteleras(i));
+}
 
 function botones(){
   const botones = document.querySelectorAll('button');
@@ -87,7 +102,11 @@ function canastaClick(){
         divTotal.style.borderWidth = '0px'
       }      
     }
-
+  })
+  mainTag.addEventListener('click', ()=>{
+    visualizado = false;
+    divTotal.style.height = '0'
+    divTotal.style.borderWidth = '0px'
   })
 }
 
@@ -119,6 +138,9 @@ function armadorTotal(){
   <div id="total-canasta"> 
     <div><h5>TOTAL:</h5></div>
     <div><p>$${canastaFinal.toFixed(2)}</p></div>
+  </div>
+  <div class="boton-canasta">
+    <button id="boton-checkout" class="boton-checkout">Checkout</button>
   </div>
   `
 

@@ -90,11 +90,12 @@ body {
   align-items: space-between; }
   .cartelera_imagen {
     width: 200px;
-    aspect-ratio: 2 / 3;
+    height: 300px;
     cursor: pointer;
     margin: 0 auto; }
     .cartelera_imagen img {
-      width: 100%; }
+      width: 200px;
+      height: 300px; }
   .cartelera_titulo {
     padding: 10px 0px; }
   .cartelera_info {
@@ -174,20 +175,33 @@ body {
   border-top: none; }
 
 #total-canasta {
-  padding: 10px;
+  padding-top: 5px;
   height: 30px;
   position: sticky;
   bottom: 0;
   border-top: 1px solid #D97823;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   font-weight: bold; }
   #total-canasta h5 {
-    font-size: 20px; }
+    font-size: 25px; }
   #total-canasta p {
     font-size: 25px;
     color: #F28322; }
+
+.boton-canasta {
+  display: flex;
+  justify-content: center; }
+
+#boton-checkout {
+  background-color: #D97823;
+  height: 35px;
+  width: 200px;
+  border: none;
+  padding: 10px;
+  margin: 10px auto;
+  border-radius: 4px; }
 
 footer {
   justify-self: flex-end;
