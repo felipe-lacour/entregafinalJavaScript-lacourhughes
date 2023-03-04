@@ -7,6 +7,7 @@ body{
   margin: 0 auto;
   background-color: $negroOscuro;
   position: relative;
+
   &__section{
     @include grid (stretch, flex-start, 0, 20px, 300px 1fr, none);
     &-seleccion {
@@ -15,6 +16,11 @@ body{
       background-color: $negroClaro;
       height: 1000px;
       overflow-y: scroll;
+      &::-webkit-scrollbar{
+        display: none;
+      }
+      -ms-overflow-style: none;
+      scrollbar-width: none;
     }
     &-filtros{
       border: 1px solid $naranjaClaro;
@@ -76,6 +82,11 @@ body{
   width: 500px;
   overflow-x: hidden;
   overflow-y: scroll;
+  &::-webkit-scrollbar{
+    display: none;
+  }
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 
   @include grid (flex-start, flex-start, 10px, 0, none, 100px);
 
@@ -153,4 +164,78 @@ body{
   padding: 10px;
   margin: 10px auto;
   border-radius: 4px;
+}
+
+#buscador{
+  max-width: 600px;
+  width: 100%;
+  position: relative;
+}
+#input-buscador{
+  width: 100%;
+  border: 1px solid $naranjaClaro;
+  outline: none;
+  height: 35px;
+  border-radius: 15px;
+  padding: 15px;
+  box-sizing: border-box;
+  color: whitesmoke;
+  background-color: $negroClaro;
+}
+#resultados-busqueda{
+  width: 100%;
+  height: fit-content;
+  max-height: 300px;
+  overflow-y: scroll;
+  background-color: #d8d7d7;
+  position: absolute;
+  top: 100%;
+  border-radius: 15px;
+  z-index: 1;
+}
+
+.busqueda{
+  box-sizing: border-box;
+  display: flex;
+  padding: 15px;
+  gap: 15px;
+  &-imagen{
+    height: 60px;
+    width: 40px;
+    border: 1px solid black;
+    img{
+      height: 60px;
+      width: 40px;
+    }
+  }
+  &-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    h3{
+      color: $negroOscuro;
+      font-weight: bolder;
+    }
+    h5{
+      color: darkcyan;
+      font-weight: bold;
+    }
+    h4{
+      color: black;
+      font-weight: bolder;
+    }
+  }
+
+  &-carrito{
+    margin-left: auto;
+    align-self: center;
+    border: 1px solid black;
+    height: 30px;
+    aspect-ratio: 1;
+  }
+}
+
+hr{
+  border: 0.5px 0 0 0;
+  border-color: black;
 }

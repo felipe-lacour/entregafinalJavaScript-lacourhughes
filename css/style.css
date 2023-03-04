@@ -9,7 +9,11 @@ body {
   height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: space-between; }
+  justify-content: space-between;
+  -ms-overflow-style: none;
+  scrollbar-width: none; }
+  body::-webkit-scrollbar {
+    display: none; }
 
 html {
   height: 100%; }
@@ -73,7 +77,11 @@ body {
       padding: 20px;
       background-color: #011526;
       height: 1000px;
-      overflow-y: scroll; }
+      overflow-y: scroll;
+      -ms-overflow-style: none;
+      scrollbar-width: none; }
+      .main__section-seleccion::-webkit-scrollbar {
+        display: none; }
     .main__section-filtros {
       border: 1px solid #D97823;
       padding: 20px;
@@ -126,10 +134,14 @@ body {
   width: 500px;
   overflow-x: hidden;
   overflow-y: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
   display: grid;
   align-content: flex-start;
   row-gap: 10px;
   grid-template-rows: 100px; }
+  .visualizar::-webkit-scrollbar {
+    display: none; }
   .visualizar-pelicula {
     height: 80px;
     padding: 10px;
@@ -202,6 +214,69 @@ body {
   padding: 10px;
   margin: 10px auto;
   border-radius: 4px; }
+
+#buscador {
+  max-width: 600px;
+  width: 100%;
+  position: relative; }
+
+#input-buscador {
+  width: 100%;
+  border: 1px solid #D97823;
+  outline: none;
+  height: 35px;
+  border-radius: 15px;
+  padding: 15px;
+  box-sizing: border-box;
+  color: whitesmoke;
+  background-color: #011526; }
+
+#resultados-busqueda {
+  width: 100%;
+  height: fit-content;
+  max-height: 300px;
+  overflow-y: scroll;
+  background-color: #d8d7d7;
+  position: absolute;
+  top: 100%;
+  border-radius: 15px;
+  z-index: 1; }
+
+.busqueda {
+  box-sizing: border-box;
+  display: flex;
+  padding: 15px;
+  gap: 15px; }
+  .busqueda-imagen {
+    height: 60px;
+    width: 40px;
+    border: 1px solid black; }
+    .busqueda-imagen img {
+      height: 60px;
+      width: 40px; }
+  .busqueda-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; }
+    .busqueda-info h3 {
+      color: #010326;
+      font-weight: bolder; }
+    .busqueda-info h5 {
+      color: darkcyan;
+      font-weight: bold; }
+    .busqueda-info h4 {
+      color: black;
+      font-weight: bolder; }
+  .busqueda-carrito {
+    margin-left: auto;
+    align-self: center;
+    border: 1px solid black;
+    height: 30px;
+    aspect-ratio: 1; }
+
+hr {
+  border: 0.5px 0 0 0;
+  border-color: black; }
 
 footer {
   justify-self: flex-end;

@@ -9,6 +9,11 @@ body{
   background-color: $negroOscuro;
   height: 100%;
   @include flex (column, space-between, stretch);
+  &::-webkit-scrollbar{
+    display: none;
+  }
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 
 html {
