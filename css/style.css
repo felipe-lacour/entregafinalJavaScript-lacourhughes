@@ -29,9 +29,9 @@ html {
   margin: 0px auto 60px auto;
   background-color: #011526;
   padding: 20px;
-  border: 1px solid #D97823; }
+  border: 1px solid #F28322; }
   .header__logo span {
-    color: #F28322; }
+    color: #D97823; }
   .header__icono {
     position: relative; }
     .header__icono img {
@@ -50,8 +50,6 @@ html {
   justify-content: center;
   align-items: center; }
   .cart-notif_background {
-    width: 20px;
-    height: 20px;
     background-color: red; }
   .cart-notif p {
     text-align: center; }
@@ -83,14 +81,14 @@ body {
       .main__section-seleccion::-webkit-scrollbar {
         display: none; }
     .main__section-filtros {
-      border: 1px solid #D97823;
+      border: 1px solid #F28322;
       padding: 20px;
       background-color: #011526; }
 
 .cartelera {
   width: 210px;
   height: 425px;
-  border: 1px solid #D97823;
+  border: 1px solid #F28322;
   padding: 15px;
   display: flex;
   flex-direction: column;
@@ -119,11 +117,11 @@ body {
       height: 30px;
       border-radius: 5px;
       border: none;
-      background-color: #D97823;
+      background-color: #F28322;
       cursor: pointer; }
 
 .price {
-  color: #F28322; }
+  color: #D97823; }
 
 .filtro_pelicula {
   margin: 10px 0; }
@@ -151,7 +149,7 @@ body {
     .visualizar-pelicula_poster {
       height: 80px;
       width: 100%;
-      border: 1px solid #D97823; }
+      border: 1px solid #F28322; }
       .visualizar-pelicula_poster img {
         width: 55px;
         height: 80px; }
@@ -168,7 +166,7 @@ body {
     .visualizar-pelicula_precio {
       font-size: 25px;
       font-weight: bold;
-      color: #D97823; }
+      color: #F28322; }
     .visualizar-pelicula_genero {
       font-size: 14px;
       color: gray; }
@@ -183,15 +181,20 @@ body {
   right: 0px;
   top: -60px;
   overflow-x: hidden;
-  border: 0 solid #D97823;
-  border-top: none; }
+  border: 0 solid #F28322;
+  border-top: none;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.15s linear; }
+  .total-precio {
+    margin-top: auto; }
 
 #total-canasta {
   padding-top: 5px;
   height: 30px;
   position: sticky;
   bottom: 0;
-  border-top: 1px solid #D97823;
+  border-top: 1px solid #F28322;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -200,14 +203,14 @@ body {
     font-size: 25px; }
   #total-canasta p {
     font-size: 25px;
-    color: #F28322; }
+    color: #D97823; }
 
 .boton-canasta {
   display: flex;
   justify-content: center; }
 
 #boton-checkout {
-  background-color: #D97823;
+  background-color: #F28322;
   height: 35px;
   width: 200px;
   border: none;
@@ -222,7 +225,7 @@ body {
 
 #input-buscador {
   width: 100%;
-  border: 1px solid #D97823;
+  border: 1px solid #F28322;
   outline: none;
   height: 35px;
   border-radius: 15px;
@@ -241,6 +244,9 @@ body {
   top: 100%;
   border-radius: 15px;
   z-index: 1; }
+  #resultados-busqueda hr {
+    border: 0.5px 0 0 0;
+    border-color: black; }
 
 .busqueda {
   box-sizing: border-box;
@@ -270,13 +276,31 @@ body {
   .busqueda-carrito {
     margin-left: auto;
     align-self: center;
-    border: 1px solid black;
-    height: 30px;
-    aspect-ratio: 1; }
+    border: none;
+    border-radius: 4px;
+    height: 40px;
+    aspect-ratio: 1;
+    background-color: darkcyan;
+    cursor: pointer; }
+    .busqueda-carrito img {
+      height: 100%;
+      width: 100%; }
 
-hr {
-  border: 0.5px 0 0 0;
-  border-color: black; }
+#clear {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 10px 0 0 0;
+  cursor: pointer; }
+  #clear p {
+    margin: 0px 15px 0px 0px;
+    color: #F28322;
+    font-weight: bold;
+    font-size: 20px; }
+
+.imagen-clear {
+  height: 20px;
+  aspect-ratio: 1; }
 
 footer {
   justify-self: flex-end;
@@ -289,4 +313,4 @@ footer {
   justify-content: space-between;
   align-items: center;
   padding: 0 20px;
-  border: 1px solid #F28322; }
+  border: 1px solid #D97823; }
