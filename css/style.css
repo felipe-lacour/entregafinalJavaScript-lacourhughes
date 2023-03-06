@@ -18,6 +18,9 @@ body {
 html {
   height: 100%; }
 
+button {
+  cursor: pointer; }
+
 .header {
   max-width: 1200px;
   box-sizing: border-box;
@@ -84,6 +87,18 @@ body {
       border: 1px solid #F28322;
       padding: 20px;
       background-color: #011526; }
+      .main__section-filtros div {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        border: 1px solid #F28322;
+        border-left: none;
+        border-right: none;
+        border-top: none; }
+      .main__section-filtros label {
+        width: 100%; }
+      .main__section-filtros hr {
+        margin-top: 10px; }
 
 .cartelera {
   width: 210px;
@@ -118,7 +133,13 @@ body {
       border-radius: 5px;
       border: none;
       background-color: #F28322;
-      cursor: pointer; }
+      cursor: pointer;
+      transition: all 0.15s;
+      transition: all 0.15s; }
+      .cartelera_boton button:hover {
+        opacity: 0.8; }
+      .cartelera_boton button:active {
+        opacity: 0.6; }
 
 .price {
   color: #D97823; }
@@ -144,8 +165,31 @@ body {
     height: 80px;
     padding: 10px;
     display: grid;
-    column-gap: 5px;
-    grid-template-columns: 55px 1fr; }
+    column-gap: 8px;
+    grid-template-columns: 30px 55px 1fr; }
+    .visualizar-pelicula-boton {
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      .visualizar-pelicula-boton button {
+        transition: all 0.15s;
+        height: 25px;
+        width: 25px;
+        border: 1px solid #F28322;
+        background-color: #011526;
+        padding: 3px 0 0 0;
+        border-radius: 4px; }
+        .visualizar-pelicula-boton button img {
+          width: 95%;
+          height: 95%;
+          z-index: -1; }
+        .visualizar-pelicula-boton button:hover {
+          color: #011526;
+          background-color: #D97823; }
+          .visualizar-pelicula-boton button:hover img {
+            filter: invert(6%) sepia(64%) saturate(1924%) hue-rotate(186deg) brightness(92%) contrast(99%); }
+        .visualizar-pelicula-boton button:active {
+          opacity: 0.6; }
     .visualizar-pelicula_poster {
       height: 80px;
       width: 100%;
@@ -207,7 +251,12 @@ body {
 
 .boton-canasta {
   display: flex;
-  justify-content: center; }
+  justify-content: center;
+  transition: all 0.15s; }
+  .boton-canasta:hover {
+    opacity: 0.8; }
+  .boton-canasta:active {
+    opacity: 0.6; }
 
 #boton-checkout {
   background-color: #F28322;
@@ -302,6 +351,13 @@ body {
   height: 20px;
   aspect-ratio: 1; }
 
+.img-busqueda {
+  transition: all 0.15s; }
+  .img-busqueda:hover {
+    opacity: 0.8; }
+  .img-busqueda:active {
+    opacity: 0.6; }
+
 footer {
   justify-self: flex-end;
   background-color: #011526;
@@ -314,3 +370,83 @@ footer {
   align-items: center;
   padding: 0 20px;
   border: 1px solid #D97823; }
+
+.checkout-body {
+  display: grid;
+  align-content: center;
+  justify-content: center;
+  column-gap: 30px;
+  grid-template-columns: 450px 750px;
+  height: 100%; }
+
+.checkout-canasta {
+  border: 1px solid #D97823;
+  width: 450px;
+  height: 100%;
+  max-height: 750px;
+  overflow-y: scroll; }
+  .checkout-canasta-pelicula {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 15px; }
+    .checkout-canasta-pelicula-img {
+      display: flex;
+      align-items: center;
+      gap: 15px; }
+      .checkout-canasta-pelicula-img-elemento {
+        width: 80px;
+        height: 120px;
+        border: 1px solid #F28322; }
+    .checkout-canasta-pelicula-info {
+      height: 110px;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: flex-start; }
+      .checkout-canasta-pelicula-info h5 {
+        font-size: 14px;
+        color: gray;
+        margin-top: auto; }
+      .checkout-canasta-pelicula-info h6 {
+        font-size: 14px;
+        color: gray; }
+      .checkout-canasta-pelicula-info p {
+        font-size: 25px;
+        font-weight: bold;
+        color: #F28322; }
+      .checkout-canasta-pelicula-info_extra {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center; }
+
+.checkout-metodo {
+  height: 750px;
+  width: 750px;
+  border: 1px solid #D97823; }
+
+.total-checkout {
+  position: sticky;
+  height: 100px;
+  width: 100%;
+  bottom: 0px;
+  border: 1px solid #F28322;
+  border-width: 1px 0 0 0;
+  background-color: #011526; }
+
+#total-canasta-checkout {
+  position: sticky;
+  padding-top: 5px;
+  height: 90px;
+  bottom: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-weight: bold; }
+  #total-canasta-checkout h5 {
+    font-size: 25px; }
+  #total-canasta-checkout p {
+    font-size: 25px;
+    color: #D97823; }

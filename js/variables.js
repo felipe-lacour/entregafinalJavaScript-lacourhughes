@@ -16,3 +16,4 @@ const resultadosBusqueda = document.querySelector('#resultados-busqueda')
 const inputBuscador = document.querySelector('#input-buscador')
 const clear = document.getElementById('clear')
 const clearImg = document.querySelector('#imagen-clear')
+let tachitoClear = './imagenes/tachitoClear.svg'

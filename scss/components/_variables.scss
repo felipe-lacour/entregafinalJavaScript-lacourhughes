@@ -24,3 +24,13 @@ $naranjaOscuro: #D97823;
 }
 
 // @include grid (stretch, flex-start, 0, 0, none, none);
+
+@mixin hover ($a, $b){
+  transition: all 0.15s;
+  &:hover{
+    opacity: $a;
+  }
+  &:active{
+    opacity: $b;
+  }
+}

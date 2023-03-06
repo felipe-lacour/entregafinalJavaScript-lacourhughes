@@ -16,7 +16,7 @@
       <h1>info<span>Film</span>: Alquiler</h1>
     </div>
     <div id="buscador">
-      <input type="text" id="input-buscador"/>
+      <input type="text" id="input-buscador" placeholder="Buscar..."/>
       <div id="resultados-busqueda">
       </div>
     </div>
@@ -31,13 +31,34 @@
       <div class="main__section-filtros">
         <h2>Filtros</h2>
         <form name="filtros">
-          <div><input type="radio" class="filtro_pelicula" id="todos" value="Todos" name="filtro"> Todos</div>
-          <div><input type="radio" class="filtro_pelicula" id="drama" value="Drama" name="filtro"> Drama</div>
-          <div><input type="radio" class="filtro_pelicula" id="clasicos" value="Comedia" name="filtro"> Comedia</div>
-          <div><input type="radio" class="filtro_pelicula" id="accion" value="Accion" name="filtro"> Accion</div>
-          <div><input type="radio" class="filtro_pelicula" id="ciencia-ficcion" value="Ciencia Ficcion" name="filtro"> Ciencia Ficcion</div>
-          <div><input type="radio" class="filtro_pelicula" id="romance" value="Romance" name="filtro"> Romance</div>
-          <div><input type="radio" class="filtro_pelicula" id="thriller" value="Thriller" name="filtro"> Thriller</div>
+          <div>
+            <input type="radio" class="filtro_pelicula" id="todos" value="Todos" name="filtro"> 
+            <label for="todos">Todos</label>
+          </div>
+          <div>
+            <input type="radio" class="filtro_pelicula" id="drama" value="Drama" name="filtro"> 
+            <label for="drama">Drama</label>
+          </div>
+          <div>
+            <input type="radio" class="filtro_pelicula" id="comedia" value="Comedia" name="filtro">
+            <label for="comedia">Comedia</label>
+          </div>
+          <div>
+            <input type="radio" class="filtro_pelicula" id="accion" value="Accion" name="filtro">
+            <label for="accion">Accion</label>
+          </div>
+          <div>
+            <input type="radio" class="filtro_pelicula" id="ciencia-ficcion" value="Ciencia Ficcion" name="filtro">
+            <label for="ciencia-ficcion">Ciencia Ficcion</label>
+          </div>
+          <div>
+            <input type="radio" class="filtro_pelicula" id="romance" value="Romance" name="filtro">
+            <label for="romance">Romance</label>
+          </div>
+          <div>
+            <input type="radio" class="filtro_pelicula" id="thriller" value="Thriller" name="filtro">
+            <label for="thriller">Thriller</label>
+          </div>
         </form>
         <hr/>
       </div>
@@ -58,12 +79,13 @@
   </div>
 </footer>
 
+
 <script src="./js/variables.js"></script>
 <script src="./js/JSON.js"></script>
 <script src="./js/constructor.js"></script>
-<script src="./js/armadores.js"></script>
-<script src="./js/events.js"></script>
-<script src="./js/funcionalidad.js"></script>
+<script src="./js/carteleras.js"></script>
+<script src="./js/canasta.js"></script>
+<script src="./js/buscador.js"></script>
 <script src="./js/main.js"></script>
 </body>
 </html>

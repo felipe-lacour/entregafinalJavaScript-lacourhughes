@@ -2,8 +2,13 @@ const localStorageSetter = () => {
   let canastaDeCompraJSON = JSON.stringify(canastaDeCompra)
   localStorage.setItem('canastaDeCompra', canastaDeCompraJSON);
 }
-let canastaDeCompraDeLS = JSON.parse(localStorage.getItem('canastaDeCompra'))
-if(canastaDeCompraDeLS){
+
+const localStorageGetter = () => {
+  let canastaDeCompraDeLS = JSON.parse(localStorage.getItem('canastaDeCompra'))
+  if(canastaDeCompraDeLS){
   canastaDeCompra = canastaDeCompraDeLS
 }
+}
+localStorageGetter();
+
 

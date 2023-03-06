@@ -26,6 +26,22 @@ body{
       border: 1px solid $naranjaClaro;
       padding: 20px;
       background-color: $negroClaro;
+      div{
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        border: 1px solid $naranjaClaro;
+        border-left: none;
+        border-right: none;
+        border-top: none;
+      }
+      label{
+        width: 100%;
+      }
+
+      hr{
+        margin-top: 10px;
+      }
     }
   }
 }
@@ -63,8 +79,10 @@ body{
       border: none;
       background-color: $naranjaClaro;
       cursor: pointer;
-    }
+      transition: all 0.15s;
+      @include hover(0.8, 0.6);
 
+    }
   }
 }
 
@@ -93,7 +111,35 @@ body{
   &-pelicula{
     height: 80px;
     padding: 10px;
-    @include grid (stretch, flex-start, 0, 5px, 55px 1fr, none);
+    @include grid (stretch, flex-start, 0, 8px, 30px 55px 1fr, none);
+    &-boton{
+      @include flex (row, center, center);
+      button{
+        transition: all 0.15s;
+        height: 25px;
+        width: 25px;
+        border: 1px solid $naranjaClaro;
+        background-color: $negroClaro;
+        padding: 3px 0 0 0;
+        border-radius: 4px;
+        img {
+          width: 95%;
+          height: 95%;
+          z-index: -1;
+        }
+        &:hover{
+          color: $negroClaro;
+          background-color: $naranjaOscuro;
+          img{
+            filter: invert(6%) sepia(64%) saturate(1924%) hue-rotate(186deg) brightness(92%) contrast(99%);
+          }
+        }
+        &:active{
+          opacity: 0.6;
+        }
+      }
+
+    }
     &_poster{
       height: 80px;
       width: 100%;
@@ -160,6 +206,7 @@ body{
 .boton-canasta{
   display: flex;
   justify-content: center;
+  @include hover(0.8, 0.6);
 }
 
 #boton-checkout{
@@ -271,3 +318,6 @@ body{
   aspect-ratio: 1;
 }
 
+.img-busqueda{
+  @include hover(0.8, 0.6)
+}
