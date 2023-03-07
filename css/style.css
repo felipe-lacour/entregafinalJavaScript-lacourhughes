@@ -581,3 +581,7 @@ input[type=number] {
 
 #compra-finalizada-toggle {
   display: none; }
+
+#compra-finalizada-saludo {
+  max-width: 800px;
+  text-align: center; }
