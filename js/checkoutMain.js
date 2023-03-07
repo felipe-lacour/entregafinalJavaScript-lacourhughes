@@ -31,7 +31,6 @@ const armadorTotalCheckout = () => {
     <div><p>$${canastaFinal.toFixed(2)}</p></div>
   </div>
   `
-  console.log('hola')
   divTotalCheckout.append(total)
 
   botonesCheckoutClear();
@@ -44,14 +43,12 @@ const botonesCheckoutClear = () => {
   const botonesCheckout = document.querySelectorAll('.visualizar-pelicula-boton-elemento')
   botonesCheckout.forEach(i => {
   i.addEventListener('click', (e)=>{
-    let botonIdCheckout = e.target.getAttribute('id')   
+    const botonIdCheckout = e.target.getAttribute('id')   
     canastaDeCompra.splice(botonIdCheckout, 1)
-    console.log(canastaDeCompra)
     if(canastaDeCompra.length === 0){
       localStorageSetter();
       location.href = '../index.html';
   } else{asistenteArmadoCheckout();}
-    
   })
 })
 }
