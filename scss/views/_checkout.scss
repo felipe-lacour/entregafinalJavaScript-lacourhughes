@@ -1,16 +1,17 @@
 .checkout{
-  &-body{
+  &-main{
     @include grid (center, center, 0, 30px, 450px 750px, none);
     height: 100%;
+    margin-top: 100px;
   }
   &-canasta{
     border: 1px solid $naranjaOscuro;
     width: 450px;
     height: 100%;
-
     max-height: 750px;
     overflow-y: scroll;
     position: relative;
+    @extend .scrollbar;
     &-pelicula{
       @include flex(row, flex-start, center);
       gap: 15px;
@@ -51,9 +52,32 @@
     }
   }
   &-metodo{
+    box-sizing: border-box;
     height: 750px;
     width: 750px;
     border: 1px solid $naranjaOscuro;
+    @include grid  (center, center, 30px, 0, 472px, 40% 110px);
+    padding: 40px;
+    position: relative;
+    &-tarjeta{
+      @include flex(column, flex-start, center);
+      border: 1px solid $naranjaClaro;
+      border-radius: 10px;
+      background-color: rgb(217, 217, 217);
+    }
+    &-inputs{
+      @include grid  (flex-start, center, 0, 0, repeat(2, 225px), repeat(2, 55px));
+      input{
+        box-sizing: border-box;
+        border: 1px solid $naranjaClaro;
+        background-color: $negroClaro;
+        height: 30px;
+        margin: 10px;
+        padding: 15px;
+        outline: none;
+        border-radius: 4px;
+      }
+    }
   }
 }
 .total-checkout{
@@ -67,7 +91,7 @@
   background-color: $negroClaro;
 }
 #checkout-canasta{
-  min-height: 750px;
+  min-height: 648px;
 }
 
 #total-canasta-checkout{
@@ -84,4 +108,81 @@
     font-size: 25px;
     color: $naranjaOscuro;
   }
+}
+#CVC,
+#mes,
+#year{
+  width: 60px;
+}
+.nombre-vencimiento{
+  display: flex;
+}
+.vencimiento{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.barra-negra{
+  height: 35px;
+  width: 100%;
+  margin-top: 20px;
+  background-color: $negroClaro;
+}
+.CVC{
+  margin-top: 20px;
+  height: 30px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+
+  &-adorno{
+    width: 50%;
+    margin-left: 15px;
+    height: 30px;
+    background-color: gray;
+  }
+  &-resultado{
+    box-sizing: border-box;
+    color: black;
+    margin-left: 15px;
+    border: 1px solid gray;
+    height: 100%;
+    padding: 5px 10px;
+  }
+}
+.info-tarjeta{
+  width: 100%;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  h3,h2,p{
+    margin: 10px auto 10px 15px ;
+    color: black;
+    font-weight: normal;
+  }
+  &-div{
+    display: flex;
+    p{margin: 3px;}
+  }
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+#info-tarjeta-vencimiento{
+  margin-left: 15px;
+}
+
+
+.accept-button{
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  width: 100px;
+  height: 100px;
+  cursor: pointer;
 }

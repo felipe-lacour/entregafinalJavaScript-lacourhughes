@@ -61,5 +61,44 @@ const asistenteArmadoCheckout = () => {
   armadorTotalCheckout();
 }
 
+
+const tarjetaDatos = (a, b, c) => {
+  a.value = '';
+  a.addEventListener('focus', ()=>{
+    a.value = '';
+    b.innerHTML = c;
+  })
+  a.addEventListener('input', ()=>{
+    if(a.value.length === 0){
+      b.innerHTML = c;
+    } else {
+      b.innerHTML = `${a.value}`;
+    }
+  })
+}
+
+tarjetaDatos(nombreInput, infoTarjetaNombre, `TITULAR DE LA TARJETA`);
+tarjetaDatos(numeroInput, infoTarjetaNumero, `XXXX XXXX XXXX XXXX`);
+tarjetaDatos(cvcInput, cvcOutput, `CVC`);
+tarjetaDatos(mesInput, spanMeses, `MM`);
+tarjetaDatos(yearInput, spanYear, `YY`);
+
+const botonAccept = document.querySelector('#accept')
+let valorInputNombre;
+botonAccept.addEventListener('click', () => {
+  valorInputNombre = infoTarjetaNombre.innerHTML
+  if((valorInputNombre.length > 0 && valorInputNombre !== 'TITULAR DE LA TARJETA')){
+      checkoutMain.style.display = 'none';
+      compraFinalizadaSaludo.innerHTML = `${valorInputNombre}, gracias por su compra! Su TOTAL fue de $${canastaFinal}.`
+      compraFinalizadaToggle.style.display = 'block';      
+    }
+  })
+
+compraFinalizadaBtn.addEventListener('click', ()=>{
+  clearCanastaDeCompra()
+  localStorageSetter()
+  location.href = '../index.html';
+})
+
 canastaDeCompra.forEach(i => armadorCanastaCheckout(i));
 armadorTotalCheckout();

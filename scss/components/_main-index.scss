@@ -96,11 +96,7 @@ body{
   width: 500px;
   overflow-x: hidden;
   overflow-y: scroll;
-  &::-webkit-scrollbar{
-    display: none;
-  }
-  -ms-overflow-style: none;
-  scrollbar-width: none;
+  @extend .scrollbar;
 
   @include grid (flex-start, flex-start, 10px, 0, none, 100px);
 
@@ -116,7 +112,7 @@ body{
         width: 25px;
         border: 1px solid $naranjaClaro;
         background-color: $negroClaro;
-        padding: 3px 0 0 0;
+        padding: 1px;
         border-radius: 4px;
         img {
           width: 95%;

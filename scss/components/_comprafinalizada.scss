@@ -1,0 +1,24 @@
+.compra-finalizada{
+  height: 750px;
+  width: 1000px;
+  background-color: rgba(74, 199, 74, 0.736);
+  margin: 100px auto;
+  border-radius: 20px;
+  @include flex (column, space-around, center);
+  &-img{
+    width: 200px;
+  }
+  &-btn{
+    border: none;
+    box-sizing: border-box;
+    width: 50%;
+    color: black;
+    padding: 20px;
+    font-weight: bold;
+    font-size: large;
+    border-radius: 10px;
+  }
+}
+#compra-finalizada-toggle{
+  display: none;
+}
