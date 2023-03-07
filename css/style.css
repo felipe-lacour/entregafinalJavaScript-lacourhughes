@@ -562,6 +562,7 @@ input[type=number] {
   background-color: rgba(74, 199, 74, 0.736);
   margin: 100px auto;
   border-radius: 20px;
+  padding: 15px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
