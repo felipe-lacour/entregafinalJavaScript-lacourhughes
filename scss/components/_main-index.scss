@@ -16,11 +16,7 @@ body{
       background-color: $negroClaro;
       height: 1000px;
       overflow-y: scroll;
-      &::-webkit-scrollbar{
-        display: none;
-      }
-      -ms-overflow-style: none;
-      scrollbar-width: none;
+      @extend .scrollbar;
     }
     &-filtros{
       border: 1px solid $naranjaClaro;

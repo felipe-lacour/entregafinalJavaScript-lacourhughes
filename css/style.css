@@ -1,3 +1,9 @@
+.scrollbar, .main__section-seleccion {
+  -ms-overflow-style: none;
+  scrollbar-width: none; }
+  .scrollbar::-webkit-scrollbar, .main__section-seleccion::-webkit-scrollbar {
+    display: none; }
+
 * {
   margin: 0;
   padding: 0;
@@ -78,11 +84,7 @@ body {
       padding: 20px;
       background-color: #011526;
       height: 1000px;
-      overflow-y: scroll;
-      -ms-overflow-style: none;
-      scrollbar-width: none; }
-      .main__section-seleccion::-webkit-scrollbar {
-        display: none; }
+      overflow-y: scroll; }
     .main__section-filtros {
       border: 1px solid #F28322;
       padding: 20px;
@@ -437,6 +439,9 @@ footer {
   border: 1px solid #F28322;
   border-width: 1px 0 0 0;
   background-color: #011526; }
+
+#checkout-canasta {
+  min-height: 750px; }
 
 #total-canasta-checkout {
   position: sticky;
