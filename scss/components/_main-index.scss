@@ -14,7 +14,7 @@ body{
       @include grid (stretch, space-between, 30px, 0, repeat(3, 240px), none);
       padding: 20px;
       background-color: $negroClaro;
-      height: 1000px;
+      height: 100vh;
       overflow-y: scroll;
       @extend .scrollbar;
     }

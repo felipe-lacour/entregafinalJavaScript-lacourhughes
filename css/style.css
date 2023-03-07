@@ -83,7 +83,7 @@ body {
       grid-template-columns: repeat(3, 240px);
       padding: 20px;
       background-color: #011526;
-      height: 1000px;
+      height: 100vh;
       overflow-y: scroll; }
     .main__section-filtros {
       border: 1px solid #F28322;
@@ -357,6 +357,7 @@ body {
     opacity: 0.6; }
 
 footer {
+  box-sizing: border-box;
   justify-self: flex-end;
   background-color: #011526;
   height: 100px;
@@ -585,3 +586,57 @@ input[type=number] {
 #compra-finalizada-saludo {
   max-width: 800px;
   text-align: center; }
+
+@media (max-width: 1100px) {
+  .main__section {
+    grid-template-columns: 200px 1fr; } }
+
+@media (max-width: 984px) {
+  .main__section-seleccion {
+    grid-template-columns: repeat(2, 240px);
+    justify-content: space-around; } }
+
+@media (max-width: 724px) {
+  .main__section {
+    grid-template-columns: 200px 300px;
+    justify-content: space-around; }
+    .main__section-seleccion {
+      grid-template-columns: 240px; } }
+
+@media (max-width: 533px) {
+  .main__section {
+    grid-template-columns: 150px 245px;
+    justify-content: space-around;
+    column-gap: 0px; }
+    .main__section-seleccion {
+      grid-template-columns: 200px;
+      padding: 10px; }
+    .main__section-filtros {
+      padding: 10px; }
+  .cartelera {
+    width: 175px;
+    height: 355px;
+    padding: 10px; }
+    .cartelera_imagen {
+      width: 165px;
+      height: 250px; }
+      .cartelera_imagen img {
+        width: 165px;
+        height: 250px; }
+    .cartelera h3 {
+      font-size: medium; }
+    .cartelera h5 {
+      font-size: small; }
+    .cartelera_titulo {
+      padding: 5px 0px; }
+  .price {
+    font-size: medium; }
+  #resultados-busqueda {
+    width: 300px;
+    left: -50%; }
+  .visualizar {
+    width: 300px; } }
+
+@media (max-width: 395px) {
+  .main__section {
+    grid-template-columns: 140px 245px; } }
