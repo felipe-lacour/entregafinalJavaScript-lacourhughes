@@ -35,7 +35,7 @@
         <div class="checkout-metodo-inputs">
           <input type="text" id="nombre" placeholder="Titular de la tarjeta"/>
           <div class="vencimiento"><input type="number" id="mes" placeholder="MM"/> / <input type="number" id="year" placeholder="YY"/> </div>
-          <input type="text" id="numero" placeholder="Numero de la tarjeta" />
+          <input id="numero" type="tel" inputmode="numeric" pattern="[0-9\s]{13,19}" maxlength="19" placeholder="xxxx xxxx xxxx xxxx">
           <div class="vencimiento">
             <input type="number" id="CVC" placeholder="CVC">      
           </div>
