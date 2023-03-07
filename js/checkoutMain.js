@@ -89,7 +89,7 @@ botonAccept.addEventListener('click', () => {
   valorInputNombre = infoTarjetaNombre.innerHTML
   if((valorInputNombre.length > 0 && valorInputNombre !== 'TITULAR DE LA TARJETA')){
       checkoutMain.style.display = 'none';
-      compraFinalizadaSaludo.innerHTML = `${valorInputNombre}, gracias por su compra! Su TOTAL fue de $${canastaFinal}.`
+      compraFinalizadaSaludo.innerHTML = `${valorInputNombre}, gracias por su compra! Su TOTAL fue de $${canastaFinal.toFixed(2)}.`
       compraFinalizadaToggle.style.display = 'block';      
     }
   })
