@@ -367,8 +367,10 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 20px;
-  border: 1px solid #D97823; }
+  border: 1px solid #D97823;
+  font-size: small; }
+  footer p {
+    margin: 0 5px; }
 
 .checkout-main {
   display: grid;
