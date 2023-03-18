@@ -35,9 +35,9 @@ const armadorCanasta = i => {
   </div>
   <div class="visualizar-pelicula_info">
     <div class="visualizar-pelicula_titulo">${i.nombre}</div>
-    <div class="visualizar-pelicula_genero">${generoNombre}</div>          
+    <div class="visualizar-pelicula_genero">${generoNombre}</div>
     <div class="visualizar-pelicula_info__extra">
-      <div class="visualizar-pelicula_fecha">${i.fecha.setLocale('fr').toLocaleString()}</div>
+      <div class="visualizar-pelicula_fecha">${i.fecha}</div>
       <div class="visualizar-pelicula_precio">$ ${i.precio}</div>          
     </div>
   </div>
