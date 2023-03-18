@@ -1,8 +1,8 @@
 footer{
-  box-sizing: border-box;
+  height: 100px;
+  min-height: 100px;
   justify-self: flex-end;
   background-color: $negroClaro;
-  height: 100px;
   margin: 50px auto 0 auto;
   max-width: 1200px;
   width: 100%;

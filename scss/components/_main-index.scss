@@ -1,5 +1,6 @@
 body{
-  height: fit-content;
+  height: 100vh;
+
 }
 .main{
   max-width: 1200px;
@@ -14,7 +15,8 @@ body{
       @include grid (stretch, space-between, 30px, 0, repeat(3, 240px), none);
       padding: 20px;
       background-color: $negroClaro;
-      height: 100vh;
+      height: 83vh;
+
       overflow-y: scroll;
       @extend .scrollbar;
     }

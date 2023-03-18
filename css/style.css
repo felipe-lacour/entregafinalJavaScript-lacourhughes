@@ -64,7 +64,7 @@ button {
     text-align: center; }
 
 body {
-  height: fit-content; }
+  height: 100vh; }
 
 .main {
   max-width: 1200px;
@@ -83,7 +83,7 @@ body {
       grid-template-columns: repeat(3, 240px);
       padding: 20px;
       background-color: #011526;
-      height: 100vh;
+      height: 83vh;
       overflow-y: scroll; }
     .main__section-filtros {
       border: 1px solid #F28322;
@@ -357,10 +357,10 @@ body {
     opacity: 0.6; }
 
 footer {
-  box-sizing: border-box;
+  height: 100px;
+  min-height: 100px;
   justify-self: flex-end;
   background-color: #011526;
-  height: 100px;
   margin: 50px auto 0 auto;
   max-width: 1200px;
   width: 100%;

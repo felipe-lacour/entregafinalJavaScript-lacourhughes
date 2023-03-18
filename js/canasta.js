@@ -37,7 +37,7 @@ const armadorCanasta = i => {
     <div class="visualizar-pelicula_titulo">${i.nombre}</div>
     <div class="visualizar-pelicula_genero">${generoNombre}</div>          
     <div class="visualizar-pelicula_info__extra">
-      <div class="visualizar-pelicula_fecha">${i.fecha}</div>
+      <div class="visualizar-pelicula_fecha">${i.fecha.setLocale('fr').toLocaleString()}</div>
       <div class="visualizar-pelicula_precio">$ ${i.precio}</div>          
     </div>
   </div>
@@ -87,11 +87,7 @@ const canastaClick = () => {
   headerIcono.addEventListener('click', () =>{
     if(canastaDeCompra.length >= 1){
       if (visualizado === false){
-        visualizado = true;
-        divTotal.style.height = '500px'
-        divTotal.style.borderWidth = '1px'
-        buscadorVisualizado = false;
-        resultadosBusqueda.style.height = '0'
+        abrirCanasta();
       } else {
         cerrar();
       }      
@@ -106,10 +102,43 @@ const canastaClick = () => {
   })
 }
 
+const abrirCanasta = () => {
+  visualizado = true;
+  divTotal.style.height = '500px'
+  divTotal.style.borderWidth = '1px'
+  buscadorVisualizado = false;
+  resultadosBusqueda.style.height = '0'
+}
 
 clear.addEventListener('click', ()=>{
-  clearCanastaDeCompra();
-  setBack();
+  Swal.fire({
+    title: 'Clear',
+    text: 'Esta seguro que desea vaciar el carrito?',
+    icon: 'question',
+    showCancelButton: true,
+    background: '#011526',
+    color: '#F28322',
+    iconColor: '#D97823',
+    confirmButtonText: 'Si',
+    cancelButtonText: 'No',
+    confirmButtonColor: '#F28322',
+  }).then(r => {
+    if (r.isConfirmed){
+      Swal.fire({
+        icon: 'success',
+        title: 'Canasta vaciada',
+        timer: 3000,
+        timerProgressBar: true,
+        background: '#011526',
+        color: '#F28322',
+        iconColor: '#D97823',
+        showConfirmButton: false
+      })
+      clearCanastaDeCompra();
+      setBack();
+    }
+  })
+
 })
 
 
@@ -127,7 +156,26 @@ function botones(queBoton){
       if (!existe){
         canastaDeCompra.push(pelicula)
         asistenteArmado();
+        Toastify({
+          text: pelicula.nombre,
+          avatar:pelicula.imagen,
+          backgroundColor: '#011526',
+          gravity: 'bottom',
+          position: 'right',
+          style:{
+            height: '50px',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'space-between',
+            padding: '10px'
+          },
+          onClick: function (){
+            abrirCanasta();
+          },
+          duration: 1000,
+        }).showToast();
       }
+
     })
   })
 }

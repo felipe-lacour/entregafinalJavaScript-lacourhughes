@@ -31,3 +31,4 @@ const checkoutMain = document.querySelector('.checkout-main');
 const compraFinalizadaToggle = document.querySelector('#compra-finalizada-toggle');
 const compraFinalizadaSaludo = document.querySelector('#compra-finalizada-saludo');
 const compraFinalizadaBtn = document.querySelector('#compra-finalizada-btn');
+const DateTime = luxon.DateTime;

@@ -15,7 +15,7 @@ const armadorCarteleras = (i) => {
     <h3>${i.nombre}</h3>
   </div>
   <div class="cartelera_info">
-    <h5 class="year">${i.fecha}</h5>
+    <h5 class="year">${i.fecha.setLocale('fr').toLocaleString()}</h5>
     <h5 class="price">$ ${i.precio}</h5>
   </div>
   <div class="cartelera_boton">
