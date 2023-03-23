@@ -1,6 +1,32 @@
-peliculas.forEach(i => armadorCarteleras(i))
+// peliculas.forEach(i => armadorCarteleras(i))
 
-canastaNotificacion();
-canastaClick();
-canastaDeCompra.forEach(i => armadorCanasta(i));
-armadorTotal();
+const cargarPeliculas = () => {
+  return new Promise ((resolve, reject) => {
+    setTimeout (() =>{
+      if(peliculas.length > 0){
+        resolve(peliculas)
+      } else {
+        reject('No hay peliculas en la base de datos')
+      }
+    }, 1500)
+  })
+}
+const carteleras = async () => {
+  const res = await fetch('./JSON/peliculas.json');
+  const data = await res.json();
+  data.forEach(i => peliculas.push(i))
+}
+cargarPeliculas()
+  .then((resolve) => {
+    resolve.forEach(i => armadorCarteleras(i))
+    canastaNotificacion();
+    canastaClick();
+    canastaDeCompra.forEach(i => armadorCanasta(i));
+    armadorTotal();
+  })
+  .catch((reject) => {
+    console.log(reject)
+  })
+
+
+carteleras();

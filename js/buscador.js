@@ -6,8 +6,7 @@ const buscador = () => {
     resultadosBusqueda.innerHTML = ''
     if (inputValor !== ''){  
       let encontrada = peliculas.filter((i) => {
-        let fecha = i.fecha.toString()
-        if (i.nombre.includes(inputValor) || i.genero.nombre.includes(inputValor) || fecha.includes(inputValor)) {
+        if (i.nombre.includes(inputValor) || i.genero.includes(inputValor) || i.fecha.year.toString().includes(inputValor)) {
           return i
         }
       })
@@ -23,7 +22,7 @@ const buscador = () => {
             </div>
             <div class="busqueda-info">
               <h3 class="busqueda-titulo">${i.nombre}</h3>    
-              <h5>${i.genero.nombre}</h5>
+              <h5>${i.genero}</h5>
               <h4>$${i.precio}</h4>
             </div>
             <div class="busqueda-carrito" >

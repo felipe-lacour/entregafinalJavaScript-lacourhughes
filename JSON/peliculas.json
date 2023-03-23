@@ -1,0 +1,397 @@
+[{
+  "nombre": "Avatar: The Way of Water",
+  "precio": 7.99,
+  "fecha": {
+      "year": 2022,
+      "month": 12,
+      "day": 15
+  },
+  "genero": "Ciencia Ficcion",
+  "imagen": "./imagenes/posters/avatar2.webp"
+},
+{
+  "nombre": "Everything Everywhere All At Once",
+  "precio": 5.99,
+  "fecha": {
+      "year": 2022,
+      "month": 6,
+      "day": 9
+  },
+  "genero": "Ciencia Ficcion",
+  "imagen": "./imagenes/posters/eeaao.webp"
+},
+{
+  "nombre": "Puss in Boots: The Last Wish",
+  "precio": 6.99,
+  "fecha": {
+      "year": 2023,
+      "month": 1,
+      "day": 5
+  },
+  "genero": "Comedia",
+  "imagen": "./imagenes/posters/pussinboots.webp"
+},
+{
+  "nombre": "The Menu",
+  "precio": 4.99,
+  "fecha": {
+      "year": 2022,
+      "month": 11,
+      "day": 18
+  },
+  "genero": "Thriller",
+  "imagen": "./imagenes/posters/themenu.webp"
+},
+{
+  "nombre": "Spider Man: No Way Home",
+  "precio": 3.99,
+  "fecha": {
+      "year": 2021,
+      "month": 1,
+      "day": 17
+  },
+  "genero": "Accion",
+  "imagen": "./imagenes/posters/spiderman3.webp"
+},
+{
+  "nombre": "The Godfather",
+  "precio": 2.99,
+  "fecha": {
+      "year": 1972,
+      "month": 9,
+      "day": 20
+  },
+  "genero": "Drama",
+  "imagen": "./imagenes/posters/thegodfather.webp"
+},
+{
+  "nombre": "Green Mile",
+  "precio": 1.99,
+  "fecha": {
+      "year": 1999,
+      "month": 12,
+      "day": 6
+  },
+  "genero": "Drama",
+  "imagen": "./imagenes/posters/greenmile.webp"
+},
+{
+  "nombre": "Top Gun",
+  "precio": 2.99,
+  "fecha": {
+      "year": 1986,
+      "month": 5,
+      "day": 16
+  },
+  "genero": "Accion",
+  "imagen": "./imagenes/posters/topgun.webp"
+},
+{
+  "nombre": "Forrest Gump",
+  "precio": 3.99,
+  "fecha": {
+      "year": 1994,
+      "month": 10,
+      "day": 6
+  },
+  "genero": "Drama",
+  "imagen": "./imagenes/posters/forrestgump.webp"
+},
+{
+  "nombre": "Rocky",
+  "precio": 1.99,
+  "fecha": {
+    "year": 1977,
+    "month": 1,
+    "day": 13
+  },
+  "genero": "Drama",
+  "imagen": "./imagenes/posters/rocky.webp"
+},
+{
+  "nombre": "Black Panther: Wakanda Forever",
+  "precio": 6.99,
+  "fecha": {
+    "year": 2022,
+    "month": 11,
+    "day": 11
+  },
+  "genero": "Accion",
+  "imagen": "./imagenes/posters/wakandafe.webp"
+},
+{
+  "nombre": "Ted",
+  "precio": 2.99,
+  "fecha": {
+    "year": 2012,
+    "month": 9,
+    "day": 6
+  },
+  "genero": "Comedia",
+  "imagen": "./imagenes/posters/ted.webp"
+},
+{
+  "nombre": "Notting Hill",
+  "precio": 2.99,
+  "fecha": {
+    "year": 1999,
+    "month": 8,
+    "day": 5
+  },
+  "genero": "Romance",
+  "imagen": "./imagenes/posters/nottinghill.webp"
+},
+{
+  "nombre": "Pride and Prejudice",
+  "precio": 3.99,
+  "fecha": {
+    "year": 2005,
+    "month": 1,
+    "day": 1
+  },
+  "genero": "Romance",
+  "imagen": "./imagenes/posters/prideandprejudice.webp"
+},
+{
+  "nombre": "When Harry Met Sally",
+  "precio": 1.99,
+  "fecha": {
+    "year": 1989,
+    "month": 1,
+    "day": 1
+  },
+  "genero": "Romance",
+  "imagen": "./imagenes/posters/whenharrymetsally.webp"
+},
+{
+  "nombre": "What's your number?",
+  "precio": 2.99,
+  "fecha": {
+    "year": 2011,
+    "month": 1,
+    "day": 1
+  },
+  "genero": "Romance",
+  "imagen": "./imagenes/posters/whatsyournumber.webp"
+},
+{
+  "nombre": "The Wedding Singer",
+  "precio": 1.99,
+  "fecha": {
+    "year": 1998,
+    "month": 1,
+    "day": 1
+  },
+  "genero": "Romance",
+  "imagen": "./imagenes/posters/theweddingsinger.webp"
+},
+{
+  "nombre": "Titanic",
+  "precio": 2.99,
+  "fecha": {
+    "year": 1997,
+    "month": 1,
+    "day": 1
+  },
+  "genero": "Romance",
+  "imagen": "./imagenes/posters/titanic.webp"
+},
+{
+  "nombre": "Prisoners",
+  "precio": 3.99,
+  "fecha": {
+    "year": 2013,
+    "month": 1,
+    "day": 1
+  },
+  "genero": "Thriller",
+  "imagen": "./imagenes/posters/prisoners.webp"
+},
+{
+  "nombre": "Don't Breathe",
+  "precio": 2.99,
+  "fecha": {
+    "year": 2016,
+    "month": 1,
+    "day": 1
+  },
+  "genero": "Thriller",
+  "imagen": "./imagenes/posters/dontbreathe.webp"
+},
+{
+  "nombre": "Basic Instinct",
+  "precio": 2.99,
+  "fecha": {
+    "year": 1992,
+    "month": 1,
+    "day": 1
+  },
+  "genero": "Thriller",
+  "imagen": "./imagenes/posters/basicinstinct.webp"
+},
+{
+  "nombre": "Get Out",
+  "precio": 2.99,
+  "fecha": {
+    "year": 2017,
+    "month": 1,
+    "day": 1
+  },
+  "genero": "Thriller",
+  "imagen": "./imagenes/posters/getout.webp"
+},
+{
+  "nombre": "Fatal Atraction",
+  "precio": 2.99,
+  "fecha": {
+    "year": 1987,
+    "month": 1,
+    "day": 1
+  },
+  "genero": "Thriller",
+  "imagen": "./imagenes/posters/fatalatraction.webp"
+},
+{
+  "nombre": "Alien",
+  "precio": 2.99,
+  "fecha": {
+    "year": 1979,
+    "month": 1,
+    "day": 1
+  },
+  "genero": "Ciencia Ficcion",
+  "imagen": "./imagenes/posters/alien.webp"
+},
+{
+  "nombre": "Back to the Future",
+  "precio": 2.99,
+  "fecha": {
+    "year": 1985,
+    "month": 1,
+    "day": 1
+  },
+  "genero": "Ciencia Ficcion",
+  "imagen": "./imagenes/posters/backtothefuture.webp"
+},
+{
+  "nombre": "Edge of Tomorrow",
+  "precio": 2.99,
+  "fecha": {
+    "year": 2014,
+    "month": 1,
+    "day": 1
+  },
+  "genero": "Ciencia Ficcion",
+  "imagen": "./imagenes/posters/edgeoftomorrow.webp"
+},
+{
+  "nombre": "Nope",
+  "precio": 2.99,
+  "fecha": {
+    "year": 2022,
+    "month": 1,
+    "day": 1
+  },
+  "genero": "Ciencia Ficcion",
+  "imagen": "./imagenes/posters/nope.webp"
+},
+{
+  "nombre": "Die Hard",
+  "precio": 2.99,
+  "fecha": {
+    "year": 1988,
+    "month": 1,
+    "day": 1
+  },
+  "genero": "Accion",
+  "imagen": "./imagenes/posters/diehard.webp"
+},
+{
+  "nombre": "Rambo",
+  "precio": 2.99,
+  "fecha": {
+    "year": 1982,
+    "month": 1,
+    "day": 1
+  },
+  "genero": "Accion",
+  "imagen": "./imagenes/posters/rambo.webp"
+},
+{
+  "nombre": "Mission Impossible",
+  "precio": 2.99,
+  "fecha": {
+    "year": 1996,
+    "month": 1,
+    "day": 1
+  },
+  "genero": "Accion",
+  "imagen": "./imagenes/posters/missionimpossible.webp"
+},
+{
+  "nombre": "Grown Ups",
+  "precio": 2.99,
+  "fecha": {
+    "year": 2010,
+    "month": 1,
+    "day": 1
+  },
+  "genero": "Comedia",
+  "imagen": "./imagenes/posters/grownups.webp"
+},
+{
+  "nombre": "Happy Gilmore",
+  "precio": 2.99,
+  "fecha": {
+    "year": 1996,
+    "month": 1,
+    "day": 1
+  },
+  "genero": "Comedia",
+  "imagen": "./imagenes/posters/happygilmore.webp"
+},
+{
+  "nombre": "Superbad",
+  "precio": 2.99,
+  "fecha": {
+    "year": 2007,
+    "month": 1,
+    "day": 1
+  },
+  "genero": "Comedia",
+  "imagen": "./imagenes/posters/superbad.webp"
+},
+{
+  "nombre": "21 Jump Street",
+  "precio": 2.99,
+  "fecha": {
+    "year": 2012,
+    "month": 1,
+    "day": 1
+  },
+  "genero": "Comedia",
+  "imagen": "./imagenes/posters/21jumpstreet.webp"
+},
+{
+  "nombre": "Shawshank Redemption",
+  "precio": 2.99,
+  "fecha": {
+    "year": 1994,
+    "month": 1,
+    "day": 1
+  },
+  "genero": "Drama",
+  "imagen": "./imagenes/posters/shawshankkredemption.webp"
+},
+{
+  "nombre": "Hacksaw Ridge",
+  "precio": 2.99,
+  "fecha": {
+    "year": 2016,
+    "month": 1,
+    "day": 1
+  },
+  "genero": "Drama",
+  "imagen": "./imagenes/posters/hacksawridge.webp"
+}
+]
