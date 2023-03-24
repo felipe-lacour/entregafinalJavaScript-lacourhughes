@@ -84,7 +84,8 @@ body {
       padding: 20px;
       background-color: #011526;
       height: 83vh;
-      overflow-y: scroll; }
+      overflow-y: scroll;
+      position: relative; }
     .main__section-filtros {
       border: 1px solid #F28322;
       padding: 20px;
@@ -356,6 +357,34 @@ body {
   .img-busqueda:active {
     opacity: 0.6; }
 
+.loading {
+  display: block;
+  width: fit-content;
+  height: fit-content;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  text-align: center; }
+  .loading-img {
+    animation: rotation 2s infinite linear;
+    height: 200px; }
+  .loading p {
+    font-weight: bold;
+    font-size: 25px;
+    color: #D97823; }
+
+.loading-complete {
+  display: none; }
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg); }
+  to {
+    transform: rotate(-359deg); } }
+
 footer {
   height: 100px;
   min-height: 100px;
@@ -560,8 +589,8 @@ input[type=number] {
   cursor: pointer; }
 
 .compra-finalizada {
-  height: 750px;
-  width: 1000px;
+  height: 80%;
+  width: 90%;
   background-color: rgba(74, 199, 74, 0.736);
   margin: 100px auto;
   border-radius: 20px;
@@ -642,3 +671,64 @@ input[type=number] {
 @media (max-width: 395px) {
   .main__section {
     grid-template-columns: 140px 245px; } }
+
+@media (max-width: 1230px) {
+  .checkout-body {
+    width: 100%; }
+  .checkout-main {
+    grid-template-columns: 1fr;
+    grid-template-rows: none;
+    width: 100%;
+    max-width: 750px;
+    height: fit-content;
+    margin: 15px auto; }
+  .checkout-canasta {
+    width: 100%;
+    max-width: 748px;
+    height: 450px; }
+  #checkout-canasta {
+    min-height: 350px; }
+  .checkout-metodo {
+    align-content: flex-start;
+    height: 500px;
+    grid-template-rows: 262px 110px; } }
+
+@media (max-width: 791px) {
+  .checkout-main {
+    max-width: 500px; }
+  .checkout-metodo {
+    width: 500px;
+    height: 575px; }
+  .checkout-canasta {
+    max-width: 500px; } }
+
+@media (max-width: 500px) {
+  .checkout-main {
+    max-width: 400px; }
+  .checkout-metodo {
+    grid-template-columns: 354px;
+    width: 400px; }
+    .checkout-metodo-tarjeta {
+      width: 354px;
+      height: 230px; }
+    .checkout-metodo-inputs {
+      grid-template-columns: repeat(2, 172px); }
+  .checkout-canasta {
+    max-width: 400px; }
+  .barra-negra {
+    height: 26.25px;
+    margin-top: 15px; }
+  .CVC {
+    margin-top: 15px;
+    height: 22.5px; }
+    .CVC-adorno {
+      margin-left: 11.25px;
+      height: 22.5px; }
+    .CVC-resultado {
+      margin-left: 11.25px;
+      padding: 3.75px 7.5px; }
+  .info-tarjeta {
+    margin-top: 22.5px;
+    margin-bottom: 7.5px; }
+    .info-tarjeta h3, .info-tarjeta h2, .info-tarjeta p {
+      margin: 7.5px auto 7.5px 11.25px; } }

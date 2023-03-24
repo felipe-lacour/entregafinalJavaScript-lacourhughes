@@ -27,6 +27,9 @@ cargarPeliculas()
   .catch((reject) => {
     console.log(reject)
   })
+  .finally(()=>{
+    loader.style.display = 'none';
+  })
 
 
 carteleras();

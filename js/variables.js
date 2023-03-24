@@ -33,3 +33,4 @@ const compraFinalizadaSaludo = document.querySelector('#compra-finalizada-saludo
 const compraFinalizadaBtn = document.querySelector('#compra-finalizada-btn');
 const DateTime = luxon.DateTime;
 let p = false;
+const loader = document.getElementById('loader');

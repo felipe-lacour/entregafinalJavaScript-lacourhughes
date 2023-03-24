@@ -1,0 +1,86 @@
+@media (max-width: 1230px) {
+  .checkout-body{
+    width: 100%;
+  }
+  .checkout-main{
+    grid-template-columns: 1fr;
+    grid-template-rows: none;
+    width: 100%;
+    max-width: 750px;
+    height: fit-content;
+    margin: 15px auto;
+  }
+  .checkout-canasta{
+    width: 100%;
+    max-width: 748px;
+    height: 450px;
+  }
+  #checkout-canasta{
+    min-height: 350px;
+  }
+  .checkout-metodo{
+    align-content: flex-start;
+    height: 500px;
+    grid-template-rows: 262px 110px;
+  }
+
+}
+
+@media (max-width: 791px){
+
+  .checkout-main{
+    max-width: 500px;
+
+  }
+  .checkout-metodo{
+    width: 500px;
+    height: 575px;
+  }
+  .checkout-canasta{
+    max-width: 500px;
+  }
+
+}
+@media (max-width: 500px){
+  .checkout-main{
+    max-width: 400px;
+  }
+  .checkout-metodo{
+    grid-template-columns: 354px;
+    width: 400px;
+    &-tarjeta{
+      width: 354px;
+      height: 230px;
+    }
+
+    &-inputs{
+      grid-template-columns: repeat(2, 172px);
+    }
+  }
+  .checkout-canasta{
+    max-width: 400px;
+  }
+  .barra-negra{
+    height: 26.25px;
+    margin-top: 15px;
+  }
+  .CVC{
+    margin-top: 15px;
+    height: 22.5px;
+    &-adorno{
+      margin-left: 11.25px;
+      height: 22.5px;
+    }
+    &-resultado{
+      margin-left: 11.25px;
+      padding: 3.75px 7.5px;
+    }
+  }
+  .info-tarjeta{
+    margin-top: 22.5px;
+    margin-bottom: 7.5px;
+    h3,h2,p{
+      margin: 7.5px auto 7.5px 11.25px ;
+    }
+  }
+}

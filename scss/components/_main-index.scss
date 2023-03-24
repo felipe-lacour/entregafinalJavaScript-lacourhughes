@@ -16,9 +16,9 @@ body{
       padding: 20px;
       background-color: $negroClaro;
       height: 83vh;
-
       overflow-y: scroll;
       @extend .scrollbar;
+      position: relative;
     }
     &-filtros{
       border: 1px solid $naranjaClaro;
@@ -314,4 +314,39 @@ body{
 
 .img-busqueda{
   @include hover(0.8, 0.6)
+}
+
+.loading{
+  display: block;
+  width: fit-content;
+  height: fit-content;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  text-align: center;
+  &-img{
+    animation: rotation 2s infinite linear;
+    height: 200px;
+  }
+  p{
+    font-weight: bold;
+    font-size: 25px;
+    color: $naranjaOscuro;
+  }
+}
+
+.loading-complete{
+  display: none;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-359deg);
+  }
 }
