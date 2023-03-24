@@ -27,7 +27,6 @@ const armadorCanasta = i => {
   canastaFinal += i.precio
   const visualizarPelicula = document.createElement('div');
   visualizarPelicula.classList.add('visualizar-pelicula');
-  const generoNombre = i.genero && i.genero.nombre ? i.genero.nombre : '';
   visualizarPelicula.innerHTML =`
   <div class="visualizar-pelicula-boton"><button class="visualizar-pelicula-boton-elemento" id="${canastaDeCompra.indexOf(i)}"><img src="${tachitoClear}" id="${canastaDeCompra.indexOf(i)}"/></button></div>
   <div class="visualizar-pelicula_poster">
@@ -35,9 +34,9 @@ const armadorCanasta = i => {
   </div>
   <div class="visualizar-pelicula_info">
     <div class="visualizar-pelicula_titulo">${i.nombre}</div>
-    <div class="visualizar-pelicula_genero">${generoNombre}</div>
+    <div class="visualizar-pelicula_genero">${i.genero}</div>
     <div class="visualizar-pelicula_info__extra">
-      <div class="visualizar-pelicula_fecha">${i.fecha}</div>
+      <div class="visualizar-pelicula_fecha">${fechaPelis(i)}</div>
       <div class="visualizar-pelicula_precio">$ ${i.precio}</div>          
     </div>
   </div>

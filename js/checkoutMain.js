@@ -10,9 +10,9 @@ const armadorCanastaCheckout = (i) => {
   </div>
   <div class="checkout-canasta-pelicula-info">
     <h2>${i.nombre}</h2>
-    <h5>${i.genero.nombre}</h5>
+    <h5>${i.genero}</h5>
     <div class="checkout-canasta-pelicula-info_extra">
-      <h6>${i.fecha}</h6>
+      <h6>${fechaPelis(i)}</h6>
       <p>$${i.precio}</p>
     </div>
   </div>

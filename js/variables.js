@@ -34,3 +34,4 @@ const compraFinalizadaBtn = document.querySelector('#compra-finalizada-btn');
 const DateTime = luxon.DateTime;
 let p = false;
 const loader = document.getElementById('loader');
+const fechaPelis = (a) =>{ return DateTime.local(a.fecha.year, a.fecha.month, a.fecha.day).setLocale('fr').toLocaleString();}
