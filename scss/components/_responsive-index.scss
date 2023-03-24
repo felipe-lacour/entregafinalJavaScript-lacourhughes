@@ -10,6 +10,11 @@
   }
 }
 @media (max-width: 984px){
+  .header__logo{
+    h1{
+     font-size: 22px; 
+    }
+  }
   .main{
     &__section{
       &-seleccion{

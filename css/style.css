@@ -632,6 +632,8 @@ input[type=number] {
     grid-template-columns: 200px 1fr; } }
 
 @media (max-width: 984px) {
+  .header__logo h1 {
+    font-size: 22px; }
   .main__section-seleccion {
     grid-template-columns: repeat(2, 240px);
     justify-content: space-around; } }
