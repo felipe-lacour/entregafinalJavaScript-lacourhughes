@@ -146,8 +146,8 @@
   "precio": 3.99,
   "fecha": {
     "year": 2005,
-    "month": 1,
-    "day": 1
+    "month": 2,
+    "day": 2
   },
   "genero": "Romance",
   "imagen": "./imagenes/posters/prideandprejudice.webp"
@@ -157,8 +157,8 @@
   "precio": 1.99,
   "fecha": {
     "year": 1989,
-    "month": 1,
-    "day": 1
+    "month": 7,
+    "day": 21
   },
   "genero": "Romance",
   "imagen": "./imagenes/posters/whenharrymetsally.webp"
@@ -168,8 +168,8 @@
   "precio": 2.99,
   "fecha": {
     "year": 2011,
-    "month": 1,
-    "day": 1
+    "month": 9,
+    "day": 30
   },
   "genero": "Romance",
   "imagen": "./imagenes/posters/whatsyournumber.webp"
@@ -179,8 +179,8 @@
   "precio": 1.99,
   "fecha": {
     "year": 1998,
-    "month": 1,
-    "day": 1
+    "month": 2,
+    "day": 13
   },
   "genero": "Romance",
   "imagen": "./imagenes/posters/theweddingsinger.webp"
@@ -190,8 +190,8 @@
   "precio": 2.99,
   "fecha": {
     "year": 1997,
-    "month": 1,
-    "day": 1
+    "month": 2,
+    "day": 5
   },
   "genero": "Romance",
   "imagen": "./imagenes/posters/titanic.webp"
@@ -201,8 +201,8 @@
   "precio": 3.99,
   "fecha": {
     "year": 2013,
-    "month": 1,
-    "day": 1
+    "month": 11,
+    "day": 28
   },
   "genero": "Thriller",
   "imagen": "./imagenes/posters/prisoners.webp"
@@ -212,8 +212,8 @@
   "precio": 2.99,
   "fecha": {
     "year": 2016,
-    "month": 1,
-    "day": 1
+    "month": 9,
+    "day": 8
   },
   "genero": "Thriller",
   "imagen": "./imagenes/posters/dontbreathe.webp"
@@ -223,8 +223,8 @@
   "precio": 2.99,
   "fecha": {
     "year": 1992,
-    "month": 1,
-    "day": 1
+    "month": 4,
+    "day": 16
   },
   "genero": "Thriller",
   "imagen": "./imagenes/posters/basicinstinct.webp"
@@ -234,8 +234,8 @@
   "precio": 2.99,
   "fecha": {
     "year": 2017,
-    "month": 1,
-    "day": 1
+    "month": 2,
+    "day": 24
   },
   "genero": "Thriller",
   "imagen": "./imagenes/posters/getout.webp"
@@ -246,7 +246,7 @@
   "fecha": {
     "year": 1987,
     "month": 1,
-    "day": 1
+    "day": 28
   },
   "genero": "Thriller",
   "imagen": "./imagenes/posters/fatalatraction.webp"
@@ -256,8 +256,8 @@
   "precio": 2.99,
   "fecha": {
     "year": 1979,
-    "month": 1,
-    "day": 1
+    "month": 12,
+    "day": 25
   },
   "genero": "Ciencia Ficcion",
   "imagen": "./imagenes/posters/alien.webp"
@@ -267,8 +267,8 @@
   "precio": 2.99,
   "fecha": {
     "year": 1985,
-    "month": 1,
-    "day": 1
+    "month": 12,
+    "day": 26
   },
   "genero": "Ciencia Ficcion",
   "imagen": "./imagenes/posters/backtothefuture.webp"
@@ -278,8 +278,8 @@
   "precio": 2.99,
   "fecha": {
     "year": 2014,
-    "month": 1,
-    "day": 1
+    "month": 5,
+    "day": 29
   },
   "genero": "Ciencia Ficcion",
   "imagen": "./imagenes/posters/edgeoftomorrow.webp"
@@ -289,8 +289,8 @@
   "precio": 2.99,
   "fecha": {
     "year": 2022,
-    "month": 1,
-    "day": 1
+    "month": 7,
+    "day": 22
   },
   "genero": "Ciencia Ficcion",
   "imagen": "./imagenes/posters/nope.webp"
@@ -300,8 +300,8 @@
   "precio": 2.99,
   "fecha": {
     "year": 1988,
-    "month": 1,
-    "day": 1
+    "month": 12,
+    "day": 15
   },
   "genero": "Accion",
   "imagen": "./imagenes/posters/diehard.webp"
@@ -311,8 +311,8 @@
   "precio": 2.99,
   "fecha": {
     "year": 1982,
-    "month": 1,
-    "day": 1
+    "month": 11,
+    "day": 4
   },
   "genero": "Accion",
   "imagen": "./imagenes/posters/rambo.webp"
@@ -322,8 +322,8 @@
   "precio": 2.99,
   "fecha": {
     "year": 1996,
-    "month": 1,
-    "day": 1
+    "month": 7,
+    "day": 4
   },
   "genero": "Accion",
   "imagen": "./imagenes/posters/missionimpossible.webp"
@@ -333,8 +333,8 @@
   "precio": 2.99,
   "fecha": {
     "year": 2010,
-    "month": 1,
-    "day": 1
+    "month": 7,
+    "day": 22
   },
   "genero": "Comedia",
   "imagen": "./imagenes/posters/grownups.webp"
@@ -344,8 +344,8 @@
   "precio": 2.99,
   "fecha": {
     "year": 1996,
-    "month": 1,
-    "day": 1
+    "month": 11,
+    "day": 22
   },
   "genero": "Comedia",
   "imagen": "./imagenes/posters/happygilmore.webp"
@@ -355,8 +355,8 @@
   "precio": 2.99,
   "fecha": {
     "year": 2007,
-    "month": 1,
-    "day": 1
+    "month": 5,
+    "day": 3
   },
   "genero": "Comedia",
   "imagen": "./imagenes/posters/superbad.webp"
@@ -366,8 +366,8 @@
   "precio": 2.99,
   "fecha": {
     "year": 2012,
-    "month": 1,
-    "day": 1
+    "month": 3,
+    "day": 23
   },
   "genero": "Comedia",
   "imagen": "./imagenes/posters/21jumpstreet.webp"
@@ -377,8 +377,8 @@
   "precio": 2.99,
   "fecha": {
     "year": 1994,
-    "month": 1,
-    "day": 1
+    "month": 10,
+    "day": 16
   },
   "genero": "Drama",
   "imagen": "./imagenes/posters/shawshankkredemption.webp"
@@ -388,8 +388,8 @@
   "precio": 2.99,
   "fecha": {
     "year": 2016,
-    "month": 1,
-    "day": 1
+    "month": 11,
+    "day": 22
   },
   "genero": "Drama",
   "imagen": "./imagenes/posters/hacksawridge.webp"
