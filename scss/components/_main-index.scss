@@ -12,7 +12,7 @@ body{
   &__section{
     @include grid (stretch, flex-start, 0, 20px, 300px 1fr, none);
     &-seleccion {
-      @include grid (stretch, space-between, 30px, 0, repeat(3, 240px), none);
+      @include grid (flex-start, space-between, 30px, 0, repeat(3, 240px), none);
       padding: 20px;
       background-color: $negroClaro;
       height: 83vh;

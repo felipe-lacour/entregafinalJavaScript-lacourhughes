@@ -8,7 +8,7 @@
     width: 100%;
     max-width: 750px;
     height: fit-content;
-    margin: 15px auto;
+    margin: 0 auto;
   }
   .checkout-canasta{
     width: 100%;
@@ -22,6 +22,10 @@
     align-content: flex-start;
     height: 500px;
     grid-template-rows: 262px 110px;
+  }
+  .accept-button{
+    width: 75px;
+    height: 75px;
   }
 
 }
@@ -38,7 +42,10 @@
   .checkout-canasta{
     max-width: 498px;
   }
-
+  .accept-button{
+    width: 50px;
+    height: 50px;
+  }
 }
 @media (max-width: 500px){
   .checkout-main{
@@ -81,5 +88,23 @@
     h3,h2,p{
       margin: 7.5px auto 7.5px 11.25px ;
     }
+  }
+
+}
+
+@media (max-width: 395px){
+  .checkout-main{
+    max-width: 390px;
+  }
+  .checkout-metodo{
+    grid-template-columns: 354px;
+    width: 390px;
+    &-tarjeta{
+      width: 354px;
+      height: 230px;
+    }}
+
+  .checkout-canasta{
+    max-width: 388px;
   }
 }

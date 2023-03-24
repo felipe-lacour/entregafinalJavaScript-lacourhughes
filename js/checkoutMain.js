@@ -84,10 +84,10 @@ tarjetaDatos(mesInput, spanMeses, `MM`);
 tarjetaDatos(yearInput, spanYear, `YY`);
 
 const botonAccept = document.querySelector('#accept')
-let valorInputNombre;
+
 botonAccept.addEventListener('click', () => {
-  valorInputNombre = infoTarjetaNombre.innerHTML
-  if((valorInputNombre.length > 0 && valorInputNombre !== 'TITULAR DE LA TARJETA')){
+  let valorInputNombre = infoTarjetaNombre.innerHTML, valorInputTarjeta = infoTarjetaNumero.innerHTML, valorCVCInput = cvcOutput.innerHTML, valorSpanMeses = spanMeses.innerHTML, valorSpanYear = spanYear.innerHTML;
+  if((valorInputNombre.length > 0 && valorInputNombre !== 'TITULAR DE LA TARJETA')&&(valorInputTarjeta.length > 0 && valorInputTarjeta !== 'XXXX XXXX XXXX XXXX')&&(valorCVCInput.length > 0 && valorCVCInput !== 'CVC')&&(valorSpanMeses.length > 0 && valorSpanMeses !== 'MM')&&(valorSpanYear.length > 0 && valorSpanYear !== 'YY')){
       checkoutMain.style.display = 'none';
       compraFinalizadaSaludo.innerHTML = `${valorInputNombre}, gracias por su compra! Su TOTAL fue de $${canastaFinal.toFixed(2)}.`
       compraFinalizadaToggle.style.display = 'block';      

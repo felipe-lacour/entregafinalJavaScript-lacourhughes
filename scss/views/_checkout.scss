@@ -185,4 +185,17 @@ input[type=number] {
   width: 100px;
   height: 100px;
   cursor: pointer;
+  transition: opacity 0.15s;
+
+  &:hover{
+    opacity: 0.8;
+  }
+
+  &:active{
+    opacity: 0.6;
+  }
+}
+
+#home{
+  left: 20px;
 }

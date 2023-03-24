@@ -31,22 +31,22 @@ const armadorCarteleras = (i) => {
 filtros.addEventListener('click', (e) => {
   switch (e.target.value) {
     case 'Drama':
-      filtroPeliculas(drm);
+      filtroPeliculas(e.target.value);
       break;
     case 'Comedia':
-      filtroPeliculas(cmd);
+      filtroPeliculas(e.target.value);
       break;
     case 'Accion':
-      filtroPeliculas(act);
+      filtroPeliculas(e.target.value);
       break;
     case 'Ciencia Ficcion':
-      filtroPeliculas(cncFccn);
+      filtroPeliculas(e.target.value);
       break;
     case 'Romance':
-      filtroPeliculas(rmnc);
+      filtroPeliculas(e.target.value);
       break;
     case 'Thriller':
-      filtroPeliculas(thrllr);
+      filtroPeliculas(e.target.value);
       break;
     default:
       mainSeleccion.innerHTML = '';
