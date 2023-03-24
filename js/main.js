@@ -1,5 +1,3 @@
-// peliculas.forEach(i => armadorCarteleras(i))
-
 const cargarPeliculas = () => {
   return new Promise ((resolve, reject) => {
     setTimeout (() =>{
