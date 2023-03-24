@@ -69,11 +69,7 @@ const tarjetaDatos = (a, b, c) => {
     b.innerHTML = c;
   })
   a.addEventListener('input', ()=>{
-    if(a.value.length === 0){
-      b.innerHTML = c;
-    } else {
-      b.innerHTML = `${a.value}`;
-    }
+    a.value.length === 0 ?  b.innerHTML = c : b.innerHTML = `${a.value}`
   })
 }
 

@@ -3,11 +3,7 @@
 const cargarPeliculas = () => {
   return new Promise ((resolve, reject) => {
     setTimeout (() =>{
-      if(peliculas.length > 0){
-        resolve(peliculas)
-      } else {
-        reject('No hay peliculas en la base de datos')
-      }
+      peliculas.length > 0 ? resolve(peliculas) : reject('No hay peliculas en la base de datos')
     }, 1500)
   })
 }

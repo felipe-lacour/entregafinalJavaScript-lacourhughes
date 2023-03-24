@@ -73,11 +73,7 @@ function clearIndividual(a){
     i.addEventListener('click', (e) => {
       const botonIdClear = e.target.getAttribute('id')
       canastaDeCompra.splice(botonIdClear, 1)
-      if(canastaDeCompra.length < 1){
-        setBack()
-      } else{
-        asistenteArmado();
-      }
+      canastaDeCompra.length < 1 ? setBack() : asistenteArmado()
     })
   })
 }
@@ -85,11 +81,7 @@ function clearIndividual(a){
 const canastaClick = () => {
   headerIcono.addEventListener('click', () =>{
     if(canastaDeCompra.length >= 1){
-      if (visualizado === false){
-        abrirCanasta();
-      } else {
-        cerrar();
-      }      
+      visualizado === false ? abrirCanasta() : cerrar()    
     }
   })
   mainTag.addEventListener('click', ()=>{

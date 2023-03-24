@@ -6,8 +6,8 @@ const localStorageSetter = () => {
 const localStorageGetter = () => {
   let canastaDeCompraDeLS = JSON.parse(localStorage.getItem('canastaDeCompra'))
   if(canastaDeCompraDeLS){
-  canastaDeCompra = canastaDeCompraDeLS
-}
+    canastaDeCompra = canastaDeCompraDeLS
+  }
 }
 localStorageGetter();
 
