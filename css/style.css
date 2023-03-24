@@ -598,8 +598,9 @@ input[type=number] {
   left: 20px; }
 
 .compra-finalizada {
-  height: 80%;
+  height: 90%;
   width: 90%;
+  max-width: 800px;
   background-color: rgba(74, 199, 74, 0.736);
   margin: 100px auto;
   border-radius: 20px;
